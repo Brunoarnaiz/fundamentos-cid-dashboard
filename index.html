@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Fundamentos de Ciencia e Ingeniería de Datos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-icon">📊</span>
+                <h1>Fundamentos CID</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="nav-btn active" data-section="theory" onclick="router.navigate('theory')">
+                    <span>📚</span> Teoría
+                </button>
+                <button class="nav-btn" data-section="flashcards" onclick="router.navigate('flashcards')">
+                    <span>🎴</span> Flashcards
+                </button>
+                <button class="nav-btn" data-section="test" onclick="router.navigate('test')">
+                    <span>📝</span> Test
+                </button>
+            </nav>
+            <button class="theme-toggle" onclick="app.toggleTheme()" title="Cambiar tema">
+                <span id="theme-icon">🌙</span>
+            </button>
+        </header>
+
+        <main class="app-main">
+            <!-- Sección: Teoría -->
+            <section id="theory" class="section active">
+                <div class="theory-layout">
+                    <aside class="theory-sidebar">
+                        <div class="search-box">
+                            <input type="text" id="theory-search" placeholder="🔍 Buscar en teoría..." oninput="theoryModule.search(this.value)">
+                        </div>
+                        <div class="theme-list" id="theme-list"></div>
+                    </aside>
+                    <div class="theory-content" id="theory-content">
+                        <div class="welcome-message">
+                            <h2>📚 Bienvenido al módulo de Teoría</h2>
+                            <p>Selecciona un tema del menú lateral para comenzar a estudiar.</p>
+                            <div class="theme-cards" id="theme-cards"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección: Flashcards -->
+            <section id="flashcards" class="section">
+                <div class="flashcards-container">
+                    <div class="flashcards-header">
+                        <h2>🎴 Flashcards</h2>
+                        <div class="flashcards-controls">
+                            <select id="flashcard-filter" onchange="flashcardsModule.filterByTheme(this.value)">
+                                <option value="all">Todos los temas</option>
+                                <option value="5">Tema 5 - Burbuja IA</option>
+                                <option value="6">Tema 6 - Proyectos CID</option>
+                                <option value="7">Tema 7 - Revolución Datos</option>
+                                <option value="8">Tema 8 - Mercado Datos UE</option>
+                            </select>
+                            <button class="btn-secondary" onclick="flashcardsModule.shuffle()">🔀 Aleatorio</button>
+                        </div>
+                    </div>
+                    <div class="flashcards-stats" id="flashcards-stats"></div>
+                    <div class="flashcard-viewer">
+                        <div class="flashcard" id="flashcard" onclick="flashcardsModule.flip()">
+                            <div class="flashcard-inner">
+                                <div class="flashcard-front" id="flashcard-front">
+                                    <span class="flashcard-label">Anverso</span>
+                                    <p class="flashcard-text" id="flashcard-front-text"></p>
+                                </div>
+                                <div class="flashcard-back" id="flashcard-back">
+                                    <span class="flashcard-label">Reverso</span>
+                                    <p class="flashcard-text" id="flashcard-back-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flashcard-actions">
+                            <button class="btn-action btn-difficult" onclick="flashcardsModule.markDifficult()">😰 Difícil</button>
+                            <button class="btn-action btn-easy" onclick="flashcardsModule.markEasy()">😎 Fácil</button>
+                        </div>
+                        <div class="flashcard-nav">
+                            <button class="btn-nav" onclick="flashcardsModule.prev()">◀ Anterior</button>
+                            <span class="flashcard-counter" id="flashcard-counter">1 / 20</span>
+                            <button class="btn-nav" onclick="flashcardsModule.next()">Siguiente ▶</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección: Test -->
+            <section id="test" class="section">
+                <div class="test-container">
+                    <div class="test-menu" id="test-menu">
+                        <h2>📝 Modo Test</h2>
+                        <p class="test-subtitle">Elige cómo quieres practicar</p>
+                        <div class="test-modes">
+                            <div class="test-mode-card exam-real" onclick="testModule.startExam()">
+                                <div class="mode-icon">🎓</div>
+                                <h3>Simulacro Examen Real</h3>
+                                <p>Las 15 preguntas oficiales extraídas de las capturas del examen. Temporizador de 25 minutos. Sin feedback hasta el final.</p>
+                            </div>
+                            <div class="test-mode-card theme-test">
+                                <div class="mode-icon">📚</div>
+                                <h3>Test por Tema</h3>
+                                <p>20 preguntas aleatorias del tema que elijas. Sin límite de tiempo.</p>
+                                <div class="theme-test-controls" onclick="event.stopPropagation()">
+                                    <select id="theme-test-select">
+                                        <option value="5">Tema 5 - Cultura del dato</option>
+                                        <option value="6">Tema 6 - Proyectos CID</option>
+                                        <option value="7">Tema 7 - Revolución de los Datos</option>
+                                        <option value="8">Tema 8 - Mercado de Datos UE</option>
+                                    </select>
+                                    <button class="btn-primary" onclick="testModule.startThemeTest(document.getElementById('theme-test-select').value)">Empezar</button>
+                                </div>
+                            </div>
+                            <div class="test-mode-card" onclick="testModule.startPractice()">
+                                <div class="mode-icon">🎯</div>
+                                <h3>Modo Práctica</h3>
+                                <p>Todas las preguntas mezcladas sin límite de tiempo. Feedback inmediato.</p>
+                            </div>
+                            <div class="test-mode-card" onclick="testModule.startReview()">
+                                <div class="mode-icon">🔁</div>
+                                <h3>Modo Repaso</h3>
+                                <p>Solo las preguntas que has fallado anteriormente. Refuerza tus puntos débiles.</p>
+                            </div>
+                        </div>
+                        <div class="test-stats-summary" id="test-stats-summary"></div>
+                    </div>
+                    <div class="test-game" id="test-game" style="display:none;">
+                        <div class="test-header">
+                            <button class="btn-back" onclick="testModule.quit()">✕ Salir</button>
+                            <div class="test-info">
+                                <span class="test-timer" id="test-timer">30:00</span>
+                                <span class="test-progress" id="test-progress">1 / 20</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <div class="question-container" id="question-container"></div>
+                        <div class="question-nav">
+                            <button class="btn-nav" id="btn-prev" onclick="testModule.prevQuestion()">◀ Anterior</button>
+                            <button class="btn-primary" id="btn-next" onclick="testModule.nextQuestion()">Siguiente ▶</button>
+                        </div>
+                    </div>
+                    <div class="test-results" id="test-results" style="display:none;">
+                        <div class="results-card">
+                            <h2 id="results-title">Resultados</h2>
+                            <div class="results-score" id="results-score"></div>
+                            <div class="results-details" id="results-details"></div>
+                            <div class="results-actions">
+                                <button class="btn-primary" onclick="testModule.restartSame()">🔄 Repetir mismo test</button>
+                                <button class="btn-secondary" onclick="testModule.newTest()">🆕 Nuevo test</button>
+                                <button class="btn-secondary" onclick="testModule.backToMenu()">📋 Menú principal</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>Fundamentos de Ciencia e Ingeniería de Datos • URJC • Curso 2025/2026</p>
+        </footer>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
