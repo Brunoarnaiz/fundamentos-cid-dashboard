@@ -114,15 +114,15 @@ const questionsData = [
     {
         "id": 9,
         "tema": 5,
-        "pregunta": "La identificación y definición de métricas para evaluar el impacto de proyectos de ciencia de datos es un tipo de:",
+        "pregunta": "La identificación y definición de métricas para evaluar el impacto de los proyectos de ciencia de datos en la organización es un tipo de:",
         "opciones": [
-            "Palanca de dirección",
-            "Palanca de amplificación",
-            "Palanca de activación",
-            "Palanca de confianza"
+            "Palanca de dirección.",
+            "Palanca de amplificación.",
+            "Palanca de activación.",
+            "Palanca de confianza."
         ],
         "correcta": 2,
-        "explicacion": "Es una palanca de activación, ya que permite cuantificar resultados de negocio y medir mejoras.",
+        "explicacion": "La identificación y definición de métricas es una palanca de activación, ya que permite cuantificar resultados de negocio y medir mejoras.",
         "fuente": "examen"
     },
     {
@@ -282,15 +282,15 @@ const questionsData = [
     {
         "id": 21,
         "tema": 5,
-        "pregunta": "Dentro del Data Science Maturity Model, el nivel de predicción (predict) se considera:",
+        "pregunta": "Dentro del Modelo de Madurez de Ciencia de Datos en una organización (Data Science Maturity Model):",
         "opciones": [
-            "El más avanzado de todos",
-            "Más avanzado que describe pero por debajo de collect",
-            "Más avanzado que discover pero por debajo de advise",
-            "Por debajo de discover"
+            "El nivel de recolección (collect) se considera más avanzado que el de descripción (describe) pero por debajo del nivel de descubrimiento (discover).",
+            "El nivel de creación de silos de datos (data silos) se considera el más avanzado de todos.",
+            "El nivel de consejo (advise) se considera más avanzado que el de predicción (predict) pero por debajo del nivel de descubrimiento (discover).",
+            "El nivel de predicción (predict) se considera más avanzado que el de descubrimiento (discover) pero por debajo del nivel de consejo (advise)."
         ],
-        "correcta": 2,
-        "explicacion": "El orden es Collect → Describe → Discover → Predict → Advise, por lo que predict está por encima de discover y por debajo de advise.",
+        "correcta": 3,
+        "explicacion": "El orden de madurez es Collect → Describe → Discover → Predict → Advise; por tanto, predict está por encima de discover y por debajo de advise.",
         "fuente": "examen"
     },
     {
@@ -310,15 +310,15 @@ const questionsData = [
     {
         "id": 23,
         "tema": 5,
-        "pregunta": "El enfoque Data Mesh se caracteriza porque:",
+        "pregunta": "Elige la afirmación verdadera que describe el enfoque data mesh para la gestión de datos en una organización:",
         "opciones": [
-            "Centraliza todos los datos en un único data lake",
-            "Considera el dato y el código software como una misma unidad y favorece la propiedad descentralizada",
-            "Separa completamente datos y software",
-            "Solo permite arquitecturas top-down"
+            "Fomentan un modelo de gobernanza top-down, de forma que los órganos directivos de la empresa controlen el lanzamiento y desarrollo de los proyectos de ciencia de datos.",
+            "Dato y código software se consideran una misma unidad y se favorecen esquemas descentralizados de la propiedad de los dominios de datos.",
+            "Se prefieren arquitecturas distribuidas para el diseño de sistemas de procesamiento y análisis de datos, separando los datos como un subproducto del código software.",
+            "Se consideran los datos como un activo que se debe recolectar, almacenar y preservar, estableciendo bases de datos claramente separadas entre diferentes equipos o departamentos de la empresa y controlando el acceso a las mismas."
         ],
         "correcta": 1,
-        "explicacion": "Data Mesh une dato y código como una misma unidad y favorece esquemas descentralizados de propiedad de dominios de datos.",
+        "explicacion": "Data Mesh considera el dato y el código software como una misma unidad y favorece esquemas descentralizados de propiedad de los dominios de datos.",
         "fuente": "examen"
     },
     {
@@ -520,15 +520,15 @@ const questionsData = [
     {
         "id": 38,
         "tema": 6,
-        "pregunta": "Un modelo inferencial:",
+        "pregunta": "Selecciona la definición correcta de un modelo de datos inferencial:",
         "opciones": [
-            "Predice nuevos valores sin explicar la influencia de las variables",
-            "Comprueba si patrones observados se mantienen en otros datos sin hacer predicciones",
-            "Presenta gráficos sin analizar otros datos",
-            "Comprueba cómo cambios en un parámetro afectan a la salida en valores promedio"
+            "Se comprueba si los cambios en un parámetro de entrada del modelo afectan a otros parámetros o a su salida (en valores promedio).",
+            "Presenta gráficos y resultados para interpretar información de un conjunto de datos sin analizar si los resultados son también aplicables a otros datos diferentes.",
+            "Comprueba si las conclusiones o patrones observados en un conjunto de datos concreto se mantienen para otros datos diferentes, pero sin realizar predicciones.",
+            "Su objetivo es realizar predicciones lo más acertadas posibles para nuevos valores de entrada, pero sin explicar qué influencia tiene cada parámetro de entrada en la predicción realizada."
         ],
-        "correcta": 1,
-        "explicacion": "El inferencial comprueba si conclusiones o patrones observados en un conjunto se mantienen para otros datos distintos, sin predicciones.",
+        "correcta": 2,
+        "explicacion": "El modelo inferencial comprueba si conclusiones o patrones observados en un conjunto de datos concreto se mantienen para otros datos diferentes, sin realizar predicciones.",
         "fuente": "examen"
     },
     {
@@ -576,15 +576,15 @@ const questionsData = [
     {
         "id": 42,
         "tema": 6,
-        "pregunta": "El sobreajuste (overfitting) en modelos de ciencia de datos consiste en:",
+        "pregunta": "El sobreajuste en los modelos/algoritmos de ciencia de datos:",
         "opciones": [
-            "Crear un modelo que no se ajusta a los datos de entrenamiento",
-            "Crear un modelo que se ajusta perfectamente a los datos de entrenamiento pero no generaliza bien",
-            "Crear un modelo demasiado simple",
-            "Crear un modelo que funciona peor con el tiempo por cambios en los datos"
+            "Consiste en crear un modelo/algoritmo que se ajusta bien a los datos que nos han dado para desarrollarlo, pero que conforme pasa el tiempo deja de funcionar tan bien por cambios en los datos o los procesos que los generan.",
+            "Consiste en crear un modelo/algoritmo que se ajusta perfectamente a los datos que nos han dado para desarrollarlo, pero que no generaliza bien para otros datos nuevos.",
+            "Consiste en crear un modelo/algoritmo excesivamente complicado y que, además, no se ajusta demasiado bien a los datos que nos han pasado para desarrollarlo.",
+            "Consiste en crear un modelo/algoritmo que no se ajuste en absoluto a los datos que nos han pasado para desarrollarlo y que, sin embargo, sí es capaz de generalizar bien para otros datos nuevos."
         ],
         "correcta": 1,
-        "explicacion": "El sobreajuste ajusta perfectamente los datos de entrenamiento pero no generaliza bien a otros datos nuevos.",
+        "explicacion": "El sobreajuste (overfitting) consiste en crear un modelo que se ajusta perfectamente a los datos de entrenamiento pero no generaliza bien a otros datos nuevos.",
         "fuente": "examen"
     },
     {
@@ -618,15 +618,15 @@ const questionsData = [
     {
         "id": 45,
         "tema": 6,
-        "pregunta": "En la novena fase del ciclo de vida actualizado de un proyecto de ciencia de datos se:",
+        "pregunta": "En la novena fase del modelo actualizado para el ciclo de vida de un proyecto de ciencia de datos (elige la opción correcta):",
         "opciones": [
-            "Se evalúa y critica un único modelo",
-            "Se operacionaliza y despliega el proyecto en producción",
-            "Se realiza solo feature engineering",
-            "Se planifica el despliegue pero sin ejecutarlo"
+            "Se planifica detalladamente el procedimiento de despliegue del proyecto en una plataforma en producción, considerando los diferentes aspectos de escalabilidad, computación elástica y rendimiento.",
+            "Se evalúa y critica un solo modelo o algoritmo que puede solucionar el problema planteado.",
+            "Se llevan a cabo todas las tareas relacionadas con ingeniería de características (feature engineering), así como la preparación y puesta en marcha de pipelines de curación de datos que sistematicen su puesta a punto.",
+            "Se operacionaliza el proyecto, desplegándose en un sistema en producción según el plan previamente establecido, normalmente con características que faciliten su escalabilidad y, en su caso, la atención a un gran número de usuarios o peticiones."
         ],
-        "correcta": 1,
-        "explicacion": "La novena fase del ciclo de vida actualizado es operacionalizar y desplegar el proyecto en producción según el plan establecido.",
+        "correcta": 3,
+        "explicacion": "La novena fase del ciclo de vida actualizado consiste en operacionalizar y desplegar el proyecto en producción según el plan establecido.",
         "fuente": "examen"
     },
     {
@@ -702,15 +702,15 @@ const questionsData = [
     {
         "id": 51,
         "tema": 6,
-        "pregunta": "El control de versiones en un proyecto de ciencia de datos sirve para:",
+        "pregunta": "El papel de un sistema de control de versiones en un proyecto de ciencia de datos es:",
         "opciones": [
-            "Impedir que otros usuarios modifiquen el código",
-            "Favorecer la reproducibilidad registrando cambios en código y datos",
-            "Automatizar la descarga de datos",
-            "Enviar informes de errores automáticos"
+            "Impedir que otros usuarios que estén fuera del proyecto puedan modificar sin control el código del mismo o puedan enviar o solicitar cambios en el código para arreglar problemas.",
+            "Favorecer la reproducibilidad a través del registro de los cambios efectuados en el código y los datos del proyecto, de forma que otros usuarios puedan localizar fácilmente qué versión han descargado y cómo utilizarla.",
+            "Ofrecer un mecanismo para automatizar la descarga, preparación y procesamiento de los datos previos a su análisis mediante modelos de aprendizaje.",
+            "Ofrecer un sistema para que otros usuarios puedan enviar informes de errores detectados en el código, que los desarrolladores responsables del proyecto siempre tienen que arreglar porque otros usuarios fuera del proyecto no pueden hacerlo."
         ],
         "correcta": 1,
-        "explicacion": "El control de versiones favorece la reproducibilidad al registrar cambios en código y datos.",
+        "explicacion": "El control de versiones favorece la reproducibilidad registrando los cambios en el código y los datos del proyecto.",
         "fuente": "examen"
     },
     {
@@ -954,12 +954,12 @@ const questionsData = [
     {
         "id": 69,
         "tema": 7,
-        "pregunta": "La norma UNE 0060 describe:",
+        "pregunta": "Escoge la opción correcta sobre la norma UNE 0060:",
         "opciones": [
-            "Criterios detallados de evaluación de la Industria Digital",
-            "Los requisitos para que una empresa industrial sea considerada Industria Digital en España",
-            "Los ejes de HADA",
-            "La definición de Industria 3.0"
+            "Establece los criterios detallados para evaluar el cumplimiento de los requisitos definidos para que una empresa industrial de cualquier tamaño y/o actividad en España sea Industria Digital.",
+            "Describe los requisitos para que una empresa industrial de cualquier tamaño y/o actividad sea considerada en España como Industria Digital.",
+            "Define los ejes fundamentales de la Herramienta de Autodiagnóstico Digital Avanzada (HADA), implantada por la Secretaría General de Industria y de la PYME del Gobierno de España.",
+            "Establece la definición oficial de la llamada Industria 3.0 en el ámbito del territorio español."
         ],
         "correcta": 1,
         "explicacion": "UNE 0060 describe los requisitos para que una empresa industrial sea considerada Industria Digital en España.",
@@ -1080,15 +1080,15 @@ const questionsData = [
     {
         "id": 78,
         "tema": 7,
-        "pregunta": "Uno de los primeros proyectos precursores de smart cities a nivel mundial fue:",
+        "pregunta": "Uno de los primeros proyectos que se consideran precursores de la posterior creación de ciudades inteligentes (smart cities) en todo el mundo fue:",
         "opciones": [
-            "Living Innovation Zone (LIZ) en San Francisco 2013",
-            "Smart Planet de IBM en 2008",
-            "SCADA en Seattle 2018",
-            "Vision Zero de Boston 2030"
+            "El proyecto Living Innovation Zone (LIZ), puesto en marcha en la ciudad de San Francisco en 2013.",
+            "El proyecto Smart Planet liderado por IBM y lanzado en 2008.",
+            "El proyecto Supervisory Control and Data Acquisition (SCADA), lanzado en Seattle en 2018.",
+            "El plan estratégico Vision Zero, elaborado por la ciudad de Boston para culminar en 2030."
         ],
         "correcta": 1,
-        "explicacion": "Smart Planet de IBM, lanzado en 2008, es considerado uno de los primeros proyectos precursores de smart cities.",
+        "explicacion": "Smart Planet de IBM, lanzado en 2008, es considerado uno de los primeros proyectos precursores de las smart cities.",
         "fuente": "examen"
     },
     {
@@ -1178,15 +1178,15 @@ const questionsData = [
     {
         "id": 85,
         "tema": 7,
-        "pregunta": "Selecciona la afirmación FALSA sobre el proyecto EDINT:",
+        "pregunta": "Selecciona la afirmación falsa sobre el proyecto EDINT:",
         "opciones": [
-            "Se buscarán sinergias con SEGITTUR",
-            "En cada localidad se creará un CEOD",
-            "Madrid y Fuenlabrada son municipios seleccionados",
-            "Financia a 12 entidades municipales en toda la UE"
+            "Se buscarán sinergias y colaboraciones con la plataforma de publicación y explotación de datos turísticos de SEGITTUR.",
+            "En cada localidad seleccionada se creará un Centro de Excelencia y Oficina del Dato (CEOD).",
+            "Dos de los municipios seleccionados para recibir financiación han sido Madrid y Fuenlabrada.",
+            "Financia a 12 entidades municipales, distribuidas por todo el territorio de la UE, para la creación de espacios de publicación y compartición de datos de aplicaciones urbanas inteligentes."
         ],
         "correcta": 3,
-        "explicacion": "EDINT es un proyecto español, no de toda la UE.",
+        "explicacion": "La afirmación falsa es que EDINT financie a 12 entidades municipales distribuidas por todo el territorio de la UE; en realidad es un proyecto español.",
         "fuente": "examen"
     },
     {
@@ -1206,29 +1206,29 @@ const questionsData = [
     {
         "id": 87,
         "tema": 7,
-        "pregunta": "El concepto 'knowledge gap' en una organización se refiere a:",
+        "pregunta": "Elige la definición correcta del concepto knowledge gap en una organización:",
         "opciones": [
-            "Aumento de la demanda de perfiles cualificados",
-            "Conjunto de necesidades medibles por KPIs",
-            "Carencia de perfiles para puestos de científicos de datos",
-            "Vacío de conocimiento por la marcha de personal clave experimentado"
+            "Es el aumento de la demanda de perfiles cualificados y versátiles para cubrir los puestos de científicos de datos.",
+            "Es el conjunto de necesidades de negocio que se pueden identificar y medir mediante KPIs.",
+            "Es la carencia de perfiles cualificados para cubrir los puestos de científicos de datos.",
+            "Es el vacío de conocimiento generado por la marcha de personal clave que acumulaba mucha experiencia y amplios conocimientos sobre el dominio de negocio."
         ],
         "correcta": 3,
-        "explicacion": "Knowledge gap es el vacío de conocimiento generado por la marcha de personal clave con experiencia en el dominio de negocio.",
+        "explicacion": "Knowledge gap es el vacío de conocimiento generado por la marcha de personal clave con experiencia y conocimientos sobre el dominio de negocio.",
         "fuente": "examen"
     },
     {
         "id": 88,
         "tema": 7,
-        "pregunta": "¿Qué país del sureste asiático vive una situación de inestabilidad política que puede poner en riesgo el abastecimiento de microchips avanzados?",
+        "pregunta": "Indica qué país del sureste asiático vive una situación de inestabilidad política que puede poner en serio riesgo el abastecimiento de microchips avanzados para los países occidentales:",
         "opciones": [
-            "Taiwán",
-            "Vietnam",
-            "China",
-            "Japón"
+            "Taiwán.",
+            "Vietnam.",
+            "China.",
+            "Japón."
         ],
         "correcta": 0,
-        "explicacion": "Taiwán es el principal fabricante de chips avanzados y su inestabilidad política puede afectar el abastecimiento.",
+        "explicacion": "Taiwán es el principal fabricante de microchips avanzados y su inestabilidad política puede poner en riesgo el abastecimiento.",
         "fuente": "examen"
     },
     {
@@ -1290,29 +1290,29 @@ const questionsData = [
     {
         "id": 93,
         "tema": 8,
-        "pregunta": "¿Cuál fue el hito más importante para el desarrollo del Mercado Único de Datos Europeo en 2020?",
+        "pregunta": "Señala cuál fue el hito más importante para el desarrollo del Mercado Único de Datos Europeo en el año 2020:",
         "opciones": [
-            "Directiva sobre Contenidos Digitales",
-            "Cláusulas Contractuales Estándar",
-            "Comunicación sobre Estrategia Europea de Datos",
-            "Reglamento de Ciberseguridad"
+            "La publicación de la Directiva sobre Contenidos Digitales en la UE.",
+            "La publicación de las Cláusulas Contractuales Estándar para transferir datos entre países de la UE y fuera de la UE.",
+            "La publicación de la Comunicación sobre Estrategia Europea de Datos.",
+            "La publicación del Reglamento sobre la Ciberseguridad."
         ],
         "correcta": 2,
-        "explicacion": "La publicación de la Comunicación sobre Estrategia Europea de Datos fue el hito más importante en 2020.",
+        "explicacion": "La publicación de la Comunicación sobre Estrategia Europea de Datos fue el hito más importante para el Mercado Único de Datos Europeo en 2020.",
         "fuente": "examen"
     },
     {
         "id": 94,
         "tema": 8,
-        "pregunta": "Las primeras acciones regulatorias encaminadas al Espacio Único de Datos en la UE (2007-2009) se aplicaron en el sector de:",
+        "pregunta": "Las primeras acciones regulatorias encaminadas hacia el Espacio Único de datos en la UE, llevadas a cabo entre 2007 y 2009 se aplicaron:",
         "opciones": [
-            "Automoción",
-            "Plataformas de pago",
-            "Redes eléctricas",
-            "Contenidos digitales"
+            "En el sector de automoción.",
+            "En el sector de plataformas de pago digitales.",
+            "En el sector de redes de energía eléctrica.",
+            "En el sector de contenidos digitales."
         ],
         "correcta": 0,
-        "explicacion": "Las primeras acciones regulatorias entre 2007 y 2009 fueron en el sector de automoción.",
+        "explicacion": "Las primeras acciones regulatorias entre 2007 y 2009 se aplicaron en el sector de automoción.",
         "fuente": "examen"
     },
     {
@@ -1570,15 +1570,15 @@ const questionsData = [
     {
         "id": 113,
         "tema": 8,
-        "pregunta": "CISPE es el acrónimo de:",
+        "pregunta": "Indica cuál es el acrónimo que designa al código de conducta para proveedores de servicios de infraestructura en la nube en la UE:",
         "opciones": [
-            "Código de Informática para Servicios Públicos Europeos",
-            "Código de Conducta para Proveedores de Servicios de Infraestructura en la Nube en la UE",
-            "Comité Internacional de Seguridad de Proveedores Europeos",
-            "Centro de Innovación en Servicios de Procesamiento Europeo"
+            "FIWARE",
+            "BDVA",
+            "GDPR",
+            "CISPE"
         ],
-        "correcta": 1,
-        "explicacion": "CISPE = Código de Conducta para Proveedores de Servicios de Infraestructura en la Nube en la UE.",
+        "correcta": 3,
+        "explicacion": "CISPE es el acrónimo del Código de Conducta para Proveedores de Servicios de Infraestructura en la Nube en la UE.",
         "fuente": "examen"
     },
     {
@@ -2939,844 +2939,844 @@ const questionsData = [
         "explicacion": "Raspberry Pi es un mini-computador de bajo coste ampliamente usado en proyectos de IoT, educación y prototipado.",
         "fuente": "teoria"
     },
-,{
-    "id": 211,
-    "tema": 5,
-    "pregunta": "¿Qué porcentaje de organizaciones obtiene cero retorno de sus inversiones en GenIA según el MIT NANDA 2025?",
-    "opciones": [
-        "70%",
-        "85%",
-        "95%",
-        "99%"
-    ],
-    "correcta": 2,
-    "explicacion": "El informe 'The GenAI Divide' del MIT NANDA concluye que el 95% de las organizaciones obtiene cero retorno de la GenIA.",
-    "fuente": "teoria"
-},
-{
-    "id": 212,
-    "tema": 5,
-    "pregunta": "¿Qué porcentaje de proyectos piloto de GenIA consigue buen rendimiento económico según el MIT?",
-    "opciones": [
-        "1%",
-        "5%",
-        "15%",
-        "25%"
-    ],
-    "correcta": 1,
-    "explicacion": "Solo el 5% de los proyectos piloto de GenIA consigue buen rendimiento económico.",
-    "fuente": "teoria"
-},
-{
-    "id": 213,
-    "tema": 5,
-    "pregunta": "La inversión corporativa estimada en GenIA según el MIT 2025 oscila entre:",
-    "opciones": [
-        "3-4 mil millones de dólares",
-        "30-40 mil millones de dólares",
-        "300-400 mil millones de dólares",
-        "3-4 billones de dólares"
-    ],
-    "correcta": 1,
-    "explicacion": "La inversión corporativa en GenIA se sitúa entre 30.000 y 40.000 millones de dólares.",
-    "fuente": "teoria"
-},
-{
-    "id": 214,
-    "tema": 5,
-    "pregunta": "La 'Brecha GenIA' se refiere a:",
-    "opciones": [
-        "La diferencia de velocidad entre modelos de IA",
-        "La diferencia entre compradores y creadores de soluciones GenIA",
-        "El tamaño de los modelos de lenguaje",
-        "La brecha salarial entre científicos de datos"
-    ],
-    "correcta": 1,
-    "explicacion": "La Brecha GenIA es la diferencia entre compradores (empresas, PYMEs) y creadores (startups, consultoras) de soluciones GenIA.",
-    "fuente": "teoria"
-},
-{
-    "id": 215,
-    "tema": 5,
-    "pregunta": "Según la Brecha GenIA, ¿qué sectores han conseguido mejoras de eficiencia significativas con GenIA?",
-    "opciones": [
-        "Minería y agricultura",
-        "Contenidos digitales/telecomunicaciones y servicios profesionales",
-        "Hostelería y turismo",
-        "Construcción y logística"
-    ],
-    "correcta": 1,
-    "explicacion": "El patrón de disrupción limitada indica que solo contenidos digitales/telecomunicaciones y servicios profesionales han logrado mejoras significativas.",
-    "fuente": "teoria"
-},
-{
-    "id": 216,
-    "tema": 5,
-    "pregunta": "La 'paradoja empresarial' en la Brecha GenIA indica que:",
-    "opciones": [
-        "Las startups tienen más recursos que las grandes empresas",
-        "Las grandes firmas lideran en proyectos piloto pero quedan rezagadas en escalabilidad",
-        "Las PYMEs no invierten en GenIA",
-        "Los proyectos internos siempre tienen éxito"
-    ],
-    "correcta": 1,
-    "explicacion": "La paradoja empresarial señala que las grandes firmas lideran en proyectos piloto pero no logran escalarlos.",
-    "fuente": "teoria"
-},
-{
-    "id": 217,
-    "tema": 5,
-    "pregunta": "Según la Brecha GenIA, ¿qué proyectos GenIA tienen el doble de tasa de éxito?",
-    "opciones": [
-        "Los totalmente internos",
-        "Los que usan alianzas con socios externos",
-        "Los que no usan datos empresariales",
-        "Los que eliminan supervisión humana"
-    ],
-    "correcta": 1,
-    "explicacion": "El patrón de ventaja de implementación indica que los proyectos con alianzas externas tienen el doble de tasa de éxito que los internos.",
-    "fuente": "teoria"
-},
-{
-    "id": 218,
-    "tema": 5,
-    "pregunta": "El 'impuesto de verificación' en GenIA es:",
-    "opciones": [
-        "Un impuesto gubernamental",
-        "El coste de verificar forensemente las respuestas de la GenIA",
-        "Una tarifa de suscripción a modelos",
-        "Una métrica de rendimiento"
-    ],
-    "correcta": 1,
-    "explicacion": "El impuesto de verificación es el coste adicional de comprobar a posteriori la corrección de las respuestas generadas por IA.",
-    "fuente": "teoria"
-},
-{
-    "id": 219,
-    "tema": 5,
-    "pregunta": "¿Quién acuñó el concepto de 'impuesto de verificación'?",
-    "opciones": [
-        "Sam Altman",
-        "Jensen Huang",
-        "Tanmai Gopal",
-        "Geoffrey Hinton"
-    ],
-    "correcta": 2,
-    "explicacion": "Tanmai Gopal, CEO de PromptQL, acuñó el concepto de impuesto de verificación.",
-    "fuente": "teoria"
-},
-{
-    "id": 220,
-    "tema": 5,
-    "pregunta": "Las 'alucinaciones' en modelos de IA generativa son:",
-    "opciones": [
-        "Respuestas incorrectas o inventadas",
-        "Problemas de hardware",
-        "Datos de entrenamiento perfectos",
-        "Métricas de rendimiento"
-    ],
-    "correcta": 0,
-    "explicacion": "Las alucinaciones son respuestas incorrectas o inventadas generadas por modelos GenIA, lo que exige supervisión humana en aplicaciones críticas.",
-    "fuente": "teoria"
-},
-{
-    "id": 221,
-    "tema": 5,
-    "pregunta": "¿Qué admitió Sam Altman sobre GPT-5 en septiembre de 2025?",
-    "opciones": [
-        "Que GPT-5 ya supera a humanos en todo",
-        "Problemas en el despliegue de GPT-5 en clientes",
-        "Que dejarían de desarrollar GPT-5",
-        "Que GPT-5 no usaría datos de clientes"
-    ],
-    "correcta": 1,
-    "explicacion": "Sam Altman, CEO de OpenAI, admitió problemas en el despliegue de GPT-5 en clientes.",
-    "fuente": "teoria"
-},
-{
-    "id": 222,
-    "tema": 5,
-    "pregunta": "Jensen Huang advirtió sobre un posible límite en:",
-    "opciones": [
-        "La velocidad de los discos duros",
-        "La capacidad de escalar el entrenamiento de modelos de IA",
-        "El número de usuarios de Internet",
-        "El tamaño de las bases de datos"
-    ],
-    "correcta": 1,
-    "explicacion": "El CEO de NVIDIA advirtió que podríamos estar llegando a un límite en la capacidad de escalar el entrenamiento de modelos de IA.",
-    "fuente": "teoria"
-},
-{
-    "id": 223,
-    "tema": 5,
-    "pregunta": "Tras el informe del MIT, NVIDIA cayó aproximadamente:",
-    "opciones": [
-        "1%",
-        "5%",
-        "10%",
-        "50%"
-    ],
-    "correcta": 2,
-    "explicacion": "NVIDIA cayó alrededor de un 10% en 15 días tras la publicación del informe del MIT NANDA.",
-    "fuente": "teoria"
-},
-{
-    "id": 224,
-    "tema": 5,
-    "pregunta": "La capitalización de NVIDIA en octubre de 2025 era de aproximadamente:",
-    "opciones": [
-        "456 millones de dólares",
-        "4,567 millones de dólares",
-        "4,567 billones de dólares",
-        "45,67 billones de dólares"
-    ],
-    "correcta": 2,
-    "explicacion": "La capitalización bursátil de NVIDIA en octubre de 2025 era de aproximadamente 4,567 billones (trillones) de dólares.",
-    "fuente": "teoria"
-},
-{
-    "id": 225,
-    "tema": 5,
-    "pregunta": "¿Cuál fue una causa de la caída de NVIDIA de hasta un 26% en abril de 2025?",
-    "opciones": [
-        "Lanzamiento de un nuevo modelo",
-        "Temor a aranceles comerciales de Donald Trump",
-        "Aumento de la demanda de chips",
-        "Fusión con otra empresa"
-    ],
-    "correcta": 1,
-    "explicacion": "En abril de 2025 NVIDIA cayó hasta un 26% por temor a aranceles comerciales de Donald Trump.",
-    "fuente": "teoria"
-},
-{
-    "id": 226,
-    "tema": 5,
-    "pregunta": "P&L significa:",
-    "opciones": [
-        "Price and Loss",
-        "Profit and Loss",
-        "Product and License",
-        "Performance and Learning"
-    ],
-    "correcta": 1,
-    "explicacion": "P&L = Profit and Loss, la declaración de pérdidas y ganancias de una empresa.",
-    "fuente": "teoria"
-},
-{
-    "id": 227,
-    "tema": 5,
-    "pregunta": "ROI significa:",
-    "opciones": [
-        "Return on Investment",
-        "Risk of Inaction",
-        "Rate of Improvement",
-        "Report of Issues"
-    ],
-    "correcta": 0,
-    "explicacion": "ROI = Return on Investment, el retorno de la inversión.",
-    "fuente": "teoria"
-},
-{
-    "id": 228,
-    "tema": 5,
-    "pregunta": "¿Qué empresa adquirió OpenAI según el tema?",
-    "opciones": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Apple"
-    ],
-    "correcta": 2,
-    "explicacion": "OpenAI fue adquirida por Microsoft Corp.",
-    "fuente": "teoria"
-},
-{
-    "id": 229,
-    "tema": 5,
-    "pregunta": "El estudio del MIT NANDA se titula:",
-    "opciones": [
-        "The Big Data Revolution",
-        "The GenAI Divide: State of AI in Business 2025",
-        "AI for Everyone",
-        "The Fourth Industrial Revolution"
-    ],
-    "correcta": 1,
-    "explicacion": "El informe se titula 'The GenAI Divide: State of AI in Business 2025'.",
-    "fuente": "teoria"
-},
-{
-    "id": 230,
-    "tema": 5,
-    "pregunta": "¿Cuál de los siguientes es un patrón de la Brecha GenIA?",
-    "opciones": [
-        "Disrupción total",
-        "Disrupción limitada",
-        "Éxito universal",
-        "Implementación automática"
-    ],
-    "correcta": 1,
-    "explicacion": "Los cuatro patrones son disrupción limitada, paradoja empresarial, sesgo de inversión y ventaja de implementación.",
-    "fuente": "teoria"
-},
-{
-    "id": 231,
-    "tema": 5,
-    "pregunta": "Según el tema, ¿qué metodología ayuda a evitar proyectos GenIA inviables?",
-    "opciones": [
-        "Waterfall puro",
-        "CRISP-DM",
-        "Scrum sin objetivos",
-        "No usar metodología"
-    ],
-    "correcta": 1,
-    "explicacion": "CRISP-DM, junto con un caso de negocio claro, calidad de datos y gestión de expectativas, ayuda a evitar proyectos inviables.",
-    "fuente": "teoria"
-},
-{
-    "id": 232,
-    "tema": 5,
-    "pregunta": "¿Qué cargo desempeñaba Eric Colson en Stitch Fix?",
-    "opciones": [
-        "CEO",
-        "Chief Algorithms Officer",
-        "CTO",
-        "Chief Data Officer"
-    ],
-    "correcta": 1,
-    "explicacion": "Eric Colson fue Chief Algorithms Officer en Stitch Fix; antes fue VP Data Science & Engineering en Netflix y Manager BI en Yahoo.",
-    "fuente": "teoria"
-},
-{
-    "id": 233,
-    "tema": 5,
-    "pregunta": "En el modelo de Stitch Fix, ¿cuántas prendas se envían al cliente?",
-    "opciones": [
-        "3",
-        "5",
-        "7",
-        "10"
-    ],
-    "correcta": 1,
-    "explicacion": "Stitch Fix envía un paquete con 5 prendas seleccionadas por algoritmos y estilistas humanos.",
-    "fuente": "teoria"
-},
-{
-    "id": 234,
-    "tema": 5,
-    "pregunta": "¿Qué ocurre en Stitch Fix si el cliente se queda con todas las prendas?",
-    "opciones": [
-        "Paga un recargo del 10%",
-        "Obtiene un 25% de descuento",
-        "No paga nada",
-        "Paga el doble"
-    ],
-    "correcta": 1,
-    "explicacion": "Si el cliente se queda con las 5 prendas, obtiene un 25% de descuento sobre el total.",
-    "fuente": "teoria"
-},
-{
-    "id": 235,
-    "tema": 5,
-    "pregunta": "¿Cuántas palancas identificó el estudio de IBM para rentabilizar big data?",
-    "opciones": [
-        "3",
-        "6",
-        "9",
-        "12"
-    ],
-    "correcta": 2,
-    "explicacion": "El estudio de IBM identificó 9 factores palanca para rentabilizar big data y analítica.",
-    "fuente": "teoria"
-},
-{
-    "id": 236,
-    "tema": 5,
-    "pregunta": "Compartir conocimientos y resultados dentro de la compañía es una palanca de:",
-    "opciones": [
-        "Activación",
-        "Dirección",
-        "Amplificación",
-        "Confianza"
-    ],
-    "correcta": 2,
-    "explicacion": "Compartir conocimientos y resultados es una palanca de amplificación porque incrementa el valor a medio/largo plazo.",
-    "fuente": "teoria"
-},
-{
-    "id": 237,
-    "tema": 5,
-    "pregunta": "HiPPO significa:",
-    "opciones": [
-        "Highest Paid Person's Opinion",
-        "Highest Performance Professional Objective",
-        "Hybrid Intelligent Processing Operator",
-        "High Priority Project Office"
-    ],
-    "correcta": 0,
-    "explicacion": "HiPPO = Highest Paid Person's Opinion. Anti-HiPPOs promueve decisiones basadas en datos frente a la opinión del mejor pagado.",
-    "fuente": "teoria"
-},
-{
-    "id": 238,
-    "tema": 5,
-    "pregunta": "El gobierno de datos NO incluye típicamente:",
-    "opciones": [
-        "Calidad",
-        "Seguridad",
-        "Privacidad",
-        "Diseño de moda"
-    ],
-    "correcta": 3,
-    "explicacion": "El gobierno de datos abarca calidad, seguridad, privacidad, metadatos, acceso, arquitectura y ciclo de vida, no diseño de moda.",
-    "fuente": "teoria"
-},
-{
-    "id": 239,
-    "tema": 6,
-    "pregunta": "¿Cuál es la última fase del ciclo de vida actualizado de 9 fases?",
-    "opciones": [
-        "Visualización",
-        "Evaluación",
-        "Operacionalización y despliegue en producción",
-        "Ingeniería de características"
-    ],
-    "correcta": 2,
-    "explicacion": "La novena fase es operacionalizar y desplegar el proyecto en producción.",
-    "fuente": "teoria"
-},
-{
-    "id": 240,
-    "tema": 6,
-    "pregunta": "Un KPI debe ser principalmente:",
-    "opciones": [
-        "Subjetivo",
-        "Cuantificable",
-        "Secreto",
-        "Estático"
-    ],
-    "correcta": 1,
-    "explicacion": "Un KPI es un indicador cuantificable del progreso hacia un resultado deseado.",
-    "fuente": "teoria"
-},
-{
-    "id": 241,
-    "tema": 6,
-    "pregunta": "¿Cuál de estas tareas pertenece a la fase de obtención y preparación de datos?",
-    "opciones": [
-        "Definir objetivos de negocio",
-        "Imputación de valores faltantes",
-        "Presentar resultados al CEO",
-        "Desplegar el modelo"
-    ],
-    "correcta": 1,
-    "explicacion": "La imputación de valores faltantes forma parte de la limpieza y preparación de datos.",
-    "fuente": "teoria"
-},
-{
-    "id": 242,
-    "tema": 6,
-    "pregunta": "El EDA se utiliza para:",
-    "opciones": [
-        "Entrenar el modelo final",
-        "Explorar distribuciones, valores faltantes y relaciones entre variables",
-        "Escribir el contrato del proyecto",
-        "Contratar al equipo"
-    ],
-    "correcta": 1,
-    "explicacion": "El EDA (Exploratory Data Analysis) examina distribuciones, valores faltantes, outliers y relaciones antes de modelar.",
-    "fuente": "teoria"
-},
-{
-    "id": 243,
-    "tema": 6,
-    "pregunta": "Según Thomson Nguyen, ¿qué porcentaje del tiempo se dedica a limpiar datos?",
-    "opciones": [
-        "20%",
-        "50%",
-        "80%",
-        "95%"
-    ],
-    "correcta": 2,
-    "explicacion": "Thomson Nguyen afirmó que el 80% de su tiempo se dedicaba a limpiar datos y que mejores datos vencen a mejores modelos.",
-    "fuente": "teoria"
-},
-{
-    "id": 244,
-    "tema": 6,
-    "pregunta": "The Netflix Prize es un ejemplo de:",
-    "opciones": [
-        "Un modelo mecanístico",
-        "Una competición de construcción y selección de modelos",
-        "Una técnica de limpieza de datos",
-        "Un tipo de overfitting"
-    ],
-    "correcta": 1,
-    "explicacion": "The Netflix Prize ilustra la construcción de múltiples modelos y su selección según métricas y restricciones.",
-    "fuente": "teoria"
-},
-{
-    "id": 245,
-    "tema": 6,
-    "pregunta": "Un modelo que predice nuevos valores sin explicar la influencia de las entradas es:",
-    "opciones": [
-        "Descriptivo",
-        "Exploratorio",
-        "Predictivo",
-        "Causal"
-    ],
-    "correcta": 2,
-    "explicacion": "El modelo predictivo predice nuevos valores sin explicar la influencia de los parámetros de entrada.",
-    "fuente": "teoria"
-},
-{
-    "id": 246,
-    "tema": 6,
-    "pregunta": "Un modelo que explica exactamente cómo varía la salida según las entradas es:",
-    "opciones": [
-        "Causal",
-        "Mecanístico",
-        "Inferencial",
-        "Exploratorio"
-    ],
-    "correcta": 1,
-    "explicacion": "El modelo mecanístico explica exactamente cómo varía la salida en función de los parámetros de entrada.",
-    "fuente": "teoria"
-},
-{
-    "id": 247,
-    "tema": 6,
-    "pregunta": "La regularización se usa para:",
-    "opciones": [
-        "Aumentar la complejidad del modelo",
-        "Penalizar la complejidad y evitar el sobreajuste",
-        "Eliminar todos los datos de entrenamiento",
-        "Aumentar la velocidad del hardware"
-    ],
-    "correcta": 1,
-    "explicacion": "La regularización penaliza la complejidad del modelo para evitar que se ajuste demasiado a los datos de entrenamiento.",
-    "fuente": "teoria"
-},
-{
-    "id": 248,
-    "tema": 6,
-    "pregunta": "¿Qué técnica detiene el entrenamiento cuando el rendimiento en validación deja de mejorar?",
-    "opciones": [
-        "Validación cruzada",
-        "Regularización",
-        "Early stopping",
-        "Data augmentation"
-    ],
-    "correcta": 2,
-    "explicacion": "Early stopping detiene el entrenamiento cuando el rendimiento en el conjunto de validación deja de mejorar.",
-    "fuente": "teoria"
-},
-{
-    "id": 249,
-    "tema": 6,
-    "pregunta": "¿Quién dijo 'All models are wrong, some models are useful'?",
-    "opciones": [
-        "Albert Einstein",
-        "George E.P. Box",
-        "Donald Knuth",
-        "Thomson Nguyen"
-    ],
-    "correcta": 1,
-    "explicacion": "La cita es de George E.P. Box: 'All models are wrong; the practical question is how wrong do they have to be to not be useful.'",
-    "fuente": "teoria"
-},
-{
-    "id": 250,
-    "tema": 6,
-    "pregunta": "MLOps se refiere a:",
-    "opciones": [
-        "Machine Learning Operations",
-        "Machine Learning Optimization",
-        "Multiple Learning Objects",
-        "Model Learning Office"
-    ],
-    "correcta": 0,
-    "explicacion": "MLOps = Machine Learning Operations, prácticas para desplegar, monitorizar, mantener y actualizar modelos en producción.",
-    "fuente": "teoria"
-},
-{
-    "id": 251,
-    "tema": 6,
-    "pregunta": "¿Cuál es la principal cualidad buscada en un científico de datos según el tema?",
-    "opciones": [
-        "Especialización extrema en una sola área",
-        "Amplitud de conocimientos y conexiones entre disciplinas",
-        "Solo experiencia en ventas",
-        "Solo programación en ensamblador"
-    ],
-    "correcta": 1,
-    "explicacion": "El perfil del científico de datos debe ser polifacético, con amplitud de conocimientos y capacidad de conectar disciplinas.",
-    "fuente": "teoria"
-},
-{
-    "id": 252,
-    "tema": 6,
-    "pregunta": "¿Quién creó Pandas y Apache Arrow?",
-    "opciones": [
-        "Hadley Wickham",
-        "Wes McKinney",
-        "David Robinson",
-        "Jenny Bryan"
-    ],
-    "correcta": 1,
-    "explicacion": "Wes McKinney es el creador de Pandas y Apache Arrow.",
-    "fuente": "teoria"
-},
-{
-    "id": 253,
-    "tema": 6,
-    "pregunta": "¿Quién creó el tidyverse y tidymodels?",
-    "opciones": [
-        "Wes McKinney",
-        "Hadley Wickham",
-        "David Robinson",
-        "Jenny Bryan"
-    ],
-    "correcta": 1,
-    "explicacion": "Hadley Wickham creó el tidyverse y tidymodels en R.",
-    "fuente": "teoria"
-},
-{
-    "id": 254,
-    "tema": 6,
-    "pregunta": "¿Quién fue científica de datos en Arsenal FC según el tema?",
-    "opciones": [
-        "Jenny Bryan",
-        "Hilary Parker",
-        "Susana Ferreras",
-        "Hadley Wickham"
-    ],
-    "correcta": 2,
-    "explicacion": "Susana Ferreras trabajó como científica de datos en Arsenal FC y fue delegada de la selección femenina española de baloncesto.",
-    "fuente": "teoria"
-},
-{
-    "id": 255,
-    "tema": 6,
-    "pregunta": "¿Quién coanfitriona el podcast Not So Standard Deviations?",
-    "opciones": [
-        "Wes McKinney",
-        "David Robinson",
-        "Hilary Parker",
-        "Susana Ferreras"
-    ],
-    "correcta": 2,
-    "explicacion": "Hilary Parker coanfitriona el podcast Not So Standard Deviations con Roger D. Peng.",
-    "fuente": "teoria"
-},
-{
-    "id": 256,
-    "tema": 6,
-    "pregunta": "¿Qué empresa validó solo el 25% de estudios oncológicos según el tema?",
-    "opciones": [
-        "Amgen",
-        "Bayer HealthCare",
-        "Pfizer",
-        "Novartis"
-    ],
-    "correcta": 1,
-    "explicacion": "Bayer HealthCare validó solo el 25% de estudios oncológicos; Amgen confirmó solo 6 de 53 artículos emblemáticos.",
-    "fuente": "teoria"
-},
-{
-    "id": 257,
-    "tema": 6,
-    "pregunta": "Amgen confirmó solo 6 de 53 artículos emblemáticos en el área de:",
-    "opciones": [
-        "Psicología",
-        "Oncología",
-        "Economía",
-        "Meteorología"
-    ],
-    "correcta": 1,
-    "explicacion": "Amgen confirmó solo 6 de 53 artículos emblemáticos en oncología.",
-    "fuente": "teoria"
-},
-{
-    "id": 258,
-    "tema": 6,
-    "pregunta": "En psicología, ¿qué porcentaje de autores no respondió sobre sus datos en 6 meses?",
-    "opciones": [
-        "25%",
-        "50%",
-        "73%",
-        "90%"
-    ],
-    "correcta": 2,
-    "explicacion": "De 249 artículos de la APA, el 73% de los autores no respondió sobre sus datos en 6 meses.",
-    "fuente": "teoria"
-},
-{
-    "id": 259,
-    "tema": 6,
-    "pregunta": "¿Quién escribió 'Why Most Published Research Findings Are False'?",
-    "opciones": [
-        "Donald Knuth",
-        "John Ioannidis",
-        "Roger Peng",
-        "Geoffrey Hinton"
-    ],
-    "correcta": 1,
-    "explicacion": "John Ioannidis publicó 'Why Most Published Research Findings Are False' en PLoS Medicine en 2005.",
-    "fuente": "teoria"
-},
-{
-    "id": 260,
-    "tema": 6,
-    "pregunta": "La programación literaria fue propuesta por:",
-    "opciones": [
-        "Albert Einstein",
-        "Donald Knuth",
-        "George E.P. Box",
-        "Thomson Nguyen"
-    ],
-    "correcta": 1,
-    "explicacion": "Donald Knuth propuso la programación literaria en 1992 para documentar el código como una obra de literatura.",
-    "fuente": "teoria"
-},
-{
-    "id": 261,
-    "tema": 6,
-    "pregunta": "¿Cuál es la diferencia fundamental entre reproducibilidad y replicabilidad?",
-    "opciones": [
-        "No hay diferencia",
-        "Reproducibilidad usa los mismos datos; replicabilidad usa datos diferentes",
-        "Reproducibilidad es solo para software; replicabilidad solo para hardware",
-        "Reproducibilidad es obligatoria; replicabilidad está prohibida"
-    ],
-    "correcta": 1,
-    "explicacion": "Reproducibilidad recomputa resultados con los mismos datos; replicabilidad realiza un experimento independiente con datos diferentes.",
-    "fuente": "teoria"
-},
-{
-    "id": 262,
-    "tema": 6,
-    "pregunta": "¿Qué paquete Python se menciona en la Actividad 2 para resúmenes descriptivos?",
-    "opciones": [
-        "pandas",
-        "summarytools",
-        "matplotlib",
-        "tensorflow"
-    ],
-    "correcta": 1,
-    "explicacion": "La Actividad 2 utiliza el paquete Python summarytools para obtener resúmenes descriptivos en el EDA.",
-    "fuente": "teoria"
-},
-{
-    "id": 263,
-    "tema": 6,
-    "pregunta": "El documento 'What is the question?' de Leek & Peng se usa en la Actividad 2 para:",
-    "opciones": [
-        "Elegir el dataset",
-        "Clasificar el tipo de análisis/modelo",
-        "Instalar Python",
-        "Crear una base de datos"
-    ],
-    "correcta": 1,
-    "explicacion": "'What is the question?' de Leek & Peng sirve para identificar el tipo de análisis o modelo según la clasificación del documento.",
-    "fuente": "teoria"
-},
-{
-    "id": 264,
-    "tema": 6,
-    "pregunta": "¿Qué plataforma se menciona como recurso para encontrar proyectos de ejemplo?",
-    "opciones": [
-        "LinkedIn",
-        "Kaggle",
-        "TikTok",
-        "Spotify"
-    ],
-    "correcta": 1,
-    "explicacion": "Kaggle se menciona como plataforma útil para encontrar proyectos de ejemplo, aunque no debe limitarse a competiciones.",
-    "fuente": "teoria"
-},
-{
-    "id": 265,
-    "tema": 6,
-    "pregunta": "Un análisis que comprueba si patrones se mantienen en otros datasets sin hacer predicciones es:",
-    "opciones": [
-        "Descriptivo",
-        "Inferencial",
-        "Predictivo",
-        "Mecanístico"
-    ],
-    "correcta": 1,
-    "explicacion": "El análisis inferencial comprueba si patrones observados se mantienen en otros conjuntos de datos sin hacer predicciones.",
-    "fuente": "teoria"
-},
-{
-    "id": 266,
-    "tema": 6,
-    "pregunta": "Un modelo demasiado simple que no captura los patrones de entrenamiento está sufriendo:",
-    "opciones": [
-        "Overfitting",
-        "Underfitting",
-        "Regularización",
-        "Early stopping"
-    ],
-    "correcta": 1,
-    "explicacion": "El underfitting ocurre cuando el modelo es demasiado simple y no captura los patrones de los datos de entrenamiento.",
-    "fuente": "teoria"
-},
-{
-    "id": 267,
-    "tema": 6,
-    "pregunta": "¿Cuál de estos NO es un elemento necesario para la replicabilidad?",
-    "opciones": [
-        "Conjuntos de datos",
-        "Infraestructura equivalente",
-        "Software y código",
-        "Secreto comercial sobre la metodología"
-    ],
-    "correcta": 3,
-    "explicacion": "La replicabilidad requiere datos, infraestructura equivalente, software/código y metodología detallada, no secreto comercial.",
-    "fuente": "teoria"
-},
-{
-    "id": 268,
-    "tema": 6,
-    "pregunta": "Según Einstein citado en el tema, los modelos deben ser:",
-    "opciones": [
-        "Tan complejos como sea posible",
-        "Tan simples como sea posible, pero no más",
-        "Siempre mecanísticos",
-        "Siempre causales"
-    ],
-    "correcta": 1,
-    "explicacion": "Einstein: 'Everything should be made as simple as possible, but not simpler.'",
-    "fuente": "teoria"
-},
-{
-    "id": 269,
-    "tema": 6,
-    "pregunta": "El control de versiones con Git favorece principalmente:",
-    "opciones": [
-        "La reproducibilidad y colaboración",
-        "El overfitting",
-        "La eliminación de datos",
-        "La compra de hardware"
-    ],
-    "correcta": 0,
-    "explicacion": "Git registra cambios en código y datos, favoreciendo la reproducibilidad, la colaboración y la recuperación de estados anteriores.",
-    "fuente": "teoria"
-},
-{
-    "id": 270,
-    "tema": 6,
-    "pregunta": "Un portfolio recomendado para un científico de datos incluye:",
-    "opciones": [
-        "Solo currículum en papel",
-        "Repositorios públicos y un blog",
-        "Solo certificados universitarios",
-        "Solo redes sociales"
-    ],
-    "correcta": 1,
-    "explicacion": "Se recomienda crear un portfolio con repositorios públicos y un blog para mostrar proyectos y conocimientos.",
-    "fuente": "teoria"
-}
+    {
+        "id": 211,
+        "tema": 5,
+        "pregunta": "¿Qué porcentaje de organizaciones obtiene cero retorno de sus inversiones en GenIA según el MIT NANDA 2025?",
+        "opciones": [
+            "70%",
+            "85%",
+            "95%",
+            "99%"
+        ],
+        "correcta": 2,
+        "explicacion": "El informe 'The GenAI Divide' del MIT NANDA concluye que el 95% de las organizaciones obtiene cero retorno de la GenIA.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 212,
+        "tema": 5,
+        "pregunta": "¿Qué porcentaje de proyectos piloto de GenIA consigue buen rendimiento económico según el MIT?",
+        "opciones": [
+            "1%",
+            "5%",
+            "15%",
+            "25%"
+        ],
+        "correcta": 1,
+        "explicacion": "Solo el 5% de los proyectos piloto de GenIA consigue buen rendimiento económico.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 213,
+        "tema": 5,
+        "pregunta": "La inversión corporativa estimada en GenIA según el MIT 2025 oscila entre:",
+        "opciones": [
+            "3-4 mil millones de dólares",
+            "30-40 mil millones de dólares",
+            "300-400 mil millones de dólares",
+            "3-4 billones de dólares"
+        ],
+        "correcta": 1,
+        "explicacion": "La inversión corporativa en GenIA se sitúa entre 30.000 y 40.000 millones de dólares.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 214,
+        "tema": 5,
+        "pregunta": "La 'Brecha GenIA' se refiere a:",
+        "opciones": [
+            "La diferencia de velocidad entre modelos de IA",
+            "La diferencia entre compradores y creadores de soluciones GenIA",
+            "El tamaño de los modelos de lenguaje",
+            "La brecha salarial entre científicos de datos"
+        ],
+        "correcta": 1,
+        "explicacion": "La Brecha GenIA es la diferencia entre compradores (empresas, PYMEs) y creadores (startups, consultoras) de soluciones GenIA.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 215,
+        "tema": 5,
+        "pregunta": "Según la Brecha GenIA, ¿qué sectores han conseguido mejoras de eficiencia significativas con GenIA?",
+        "opciones": [
+            "Minería y agricultura",
+            "Contenidos digitales/telecomunicaciones y servicios profesionales",
+            "Hostelería y turismo",
+            "Construcción y logística"
+        ],
+        "correcta": 1,
+        "explicacion": "El patrón de disrupción limitada indica que solo contenidos digitales/telecomunicaciones y servicios profesionales han logrado mejoras significativas.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 216,
+        "tema": 5,
+        "pregunta": "La 'paradoja empresarial' en la Brecha GenIA indica que:",
+        "opciones": [
+            "Las startups tienen más recursos que las grandes empresas",
+            "Las grandes firmas lideran en proyectos piloto pero quedan rezagadas en escalabilidad",
+            "Las PYMEs no invierten en GenIA",
+            "Los proyectos internos siempre tienen éxito"
+        ],
+        "correcta": 1,
+        "explicacion": "La paradoja empresarial señala que las grandes firmas lideran en proyectos piloto pero no logran escalarlos.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 217,
+        "tema": 5,
+        "pregunta": "Según la Brecha GenIA, ¿qué proyectos GenIA tienen el doble de tasa de éxito?",
+        "opciones": [
+            "Los totalmente internos",
+            "Los que usan alianzas con socios externos",
+            "Los que no usan datos empresariales",
+            "Los que eliminan supervisión humana"
+        ],
+        "correcta": 1,
+        "explicacion": "El patrón de ventaja de implementación indica que los proyectos con alianzas externas tienen el doble de tasa de éxito que los internos.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 218,
+        "tema": 5,
+        "pregunta": "El 'impuesto de verificación' en GenIA es:",
+        "opciones": [
+            "Un impuesto gubernamental",
+            "El coste de verificar forensemente las respuestas de la GenIA",
+            "Una tarifa de suscripción a modelos",
+            "Una métrica de rendimiento"
+        ],
+        "correcta": 1,
+        "explicacion": "El impuesto de verificación es el coste adicional de comprobar a posteriori la corrección de las respuestas generadas por IA.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 219,
+        "tema": 5,
+        "pregunta": "¿Quién acuñó el concepto de 'impuesto de verificación'?",
+        "opciones": [
+            "Sam Altman",
+            "Jensen Huang",
+            "Tanmai Gopal",
+            "Geoffrey Hinton"
+        ],
+        "correcta": 2,
+        "explicacion": "Tanmai Gopal, CEO de PromptQL, acuñó el concepto de impuesto de verificación.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 220,
+        "tema": 5,
+        "pregunta": "Las 'alucinaciones' en modelos de IA generativa son:",
+        "opciones": [
+            "Respuestas incorrectas o inventadas",
+            "Problemas de hardware",
+            "Datos de entrenamiento perfectos",
+            "Métricas de rendimiento"
+        ],
+        "correcta": 0,
+        "explicacion": "Las alucinaciones son respuestas incorrectas o inventadas generadas por modelos GenIA, lo que exige supervisión humana en aplicaciones críticas.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 221,
+        "tema": 5,
+        "pregunta": "¿Qué admitió Sam Altman sobre GPT-5 en septiembre de 2025?",
+        "opciones": [
+            "Que GPT-5 ya supera a humanos en todo",
+            "Problemas en el despliegue de GPT-5 en clientes",
+            "Que dejarían de desarrollar GPT-5",
+            "Que GPT-5 no usaría datos de clientes"
+        ],
+        "correcta": 1,
+        "explicacion": "Sam Altman, CEO de OpenAI, admitió problemas en el despliegue de GPT-5 en clientes.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 222,
+        "tema": 5,
+        "pregunta": "Jensen Huang advirtió sobre un posible límite en:",
+        "opciones": [
+            "La velocidad de los discos duros",
+            "La capacidad de escalar el entrenamiento de modelos de IA",
+            "El número de usuarios de Internet",
+            "El tamaño de las bases de datos"
+        ],
+        "correcta": 1,
+        "explicacion": "El CEO de NVIDIA advirtió que podríamos estar llegando a un límite en la capacidad de escalar el entrenamiento de modelos de IA.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 223,
+        "tema": 5,
+        "pregunta": "Tras el informe del MIT, NVIDIA cayó aproximadamente:",
+        "opciones": [
+            "1%",
+            "5%",
+            "10%",
+            "50%"
+        ],
+        "correcta": 2,
+        "explicacion": "NVIDIA cayó alrededor de un 10% en 15 días tras la publicación del informe del MIT NANDA.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 224,
+        "tema": 5,
+        "pregunta": "La capitalización de NVIDIA en octubre de 2025 era de aproximadamente:",
+        "opciones": [
+            "456 millones de dólares",
+            "4,567 millones de dólares",
+            "4,567 billones de dólares",
+            "45,67 billones de dólares"
+        ],
+        "correcta": 2,
+        "explicacion": "La capitalización bursátil de NVIDIA en octubre de 2025 era de aproximadamente 4,567 billones (trillones) de dólares.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 225,
+        "tema": 5,
+        "pregunta": "¿Cuál fue una causa de la caída de NVIDIA de hasta un 26% en abril de 2025?",
+        "opciones": [
+            "Lanzamiento de un nuevo modelo",
+            "Temor a aranceles comerciales de Donald Trump",
+            "Aumento de la demanda de chips",
+            "Fusión con otra empresa"
+        ],
+        "correcta": 1,
+        "explicacion": "En abril de 2025 NVIDIA cayó hasta un 26% por temor a aranceles comerciales de Donald Trump.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 226,
+        "tema": 5,
+        "pregunta": "P&L significa:",
+        "opciones": [
+            "Price and Loss",
+            "Profit and Loss",
+            "Product and License",
+            "Performance and Learning"
+        ],
+        "correcta": 1,
+        "explicacion": "P&L = Profit and Loss, la declaración de pérdidas y ganancias de una empresa.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 227,
+        "tema": 5,
+        "pregunta": "ROI significa:",
+        "opciones": [
+            "Return on Investment",
+            "Risk of Inaction",
+            "Rate of Improvement",
+            "Report of Issues"
+        ],
+        "correcta": 0,
+        "explicacion": "ROI = Return on Investment, el retorno de la inversión.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 228,
+        "tema": 5,
+        "pregunta": "¿Qué empresa adquirió OpenAI según el tema?",
+        "opciones": [
+            "Google",
+            "Amazon",
+            "Microsoft",
+            "Apple"
+        ],
+        "correcta": 2,
+        "explicacion": "OpenAI fue adquirida por Microsoft Corp.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 229,
+        "tema": 5,
+        "pregunta": "El estudio del MIT NANDA se titula:",
+        "opciones": [
+            "The Big Data Revolution",
+            "The GenAI Divide: State of AI in Business 2025",
+            "AI for Everyone",
+            "The Fourth Industrial Revolution"
+        ],
+        "correcta": 1,
+        "explicacion": "El informe se titula 'The GenAI Divide: State of AI in Business 2025'.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 230,
+        "tema": 5,
+        "pregunta": "¿Cuál de los siguientes es un patrón de la Brecha GenIA?",
+        "opciones": [
+            "Disrupción total",
+            "Disrupción limitada",
+            "Éxito universal",
+            "Implementación automática"
+        ],
+        "correcta": 1,
+        "explicacion": "Los cuatro patrones son disrupción limitada, paradoja empresarial, sesgo de inversión y ventaja de implementación.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 231,
+        "tema": 5,
+        "pregunta": "Según el tema, ¿qué metodología ayuda a evitar proyectos GenIA inviables?",
+        "opciones": [
+            "Waterfall puro",
+            "CRISP-DM",
+            "Scrum sin objetivos",
+            "No usar metodología"
+        ],
+        "correcta": 1,
+        "explicacion": "CRISP-DM, junto con un caso de negocio claro, calidad de datos y gestión de expectativas, ayuda a evitar proyectos inviables.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 232,
+        "tema": 5,
+        "pregunta": "¿Qué cargo desempeñaba Eric Colson en Stitch Fix?",
+        "opciones": [
+            "CEO",
+            "Chief Algorithms Officer",
+            "CTO",
+            "Chief Data Officer"
+        ],
+        "correcta": 1,
+        "explicacion": "Eric Colson fue Chief Algorithms Officer en Stitch Fix; antes fue VP Data Science & Engineering en Netflix y Manager BI en Yahoo.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 233,
+        "tema": 5,
+        "pregunta": "En el modelo de Stitch Fix, ¿cuántas prendas se envían al cliente?",
+        "opciones": [
+            "3",
+            "5",
+            "7",
+            "10"
+        ],
+        "correcta": 1,
+        "explicacion": "Stitch Fix envía un paquete con 5 prendas seleccionadas por algoritmos y estilistas humanos.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 234,
+        "tema": 5,
+        "pregunta": "¿Qué ocurre en Stitch Fix si el cliente se queda con todas las prendas?",
+        "opciones": [
+            "Paga un recargo del 10%",
+            "Obtiene un 25% de descuento",
+            "No paga nada",
+            "Paga el doble"
+        ],
+        "correcta": 1,
+        "explicacion": "Si el cliente se queda con las 5 prendas, obtiene un 25% de descuento sobre el total.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 235,
+        "tema": 5,
+        "pregunta": "¿Cuántas palancas identificó el estudio de IBM para rentabilizar big data?",
+        "opciones": [
+            "3",
+            "6",
+            "9",
+            "12"
+        ],
+        "correcta": 2,
+        "explicacion": "El estudio de IBM identificó 9 factores palanca para rentabilizar big data y analítica.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 236,
+        "tema": 5,
+        "pregunta": "Compartir conocimientos y resultados dentro de la compañía es una palanca de:",
+        "opciones": [
+            "Activación",
+            "Dirección",
+            "Amplificación",
+            "Confianza"
+        ],
+        "correcta": 2,
+        "explicacion": "Compartir conocimientos y resultados es una palanca de amplificación porque incrementa el valor a medio/largo plazo.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 237,
+        "tema": 5,
+        "pregunta": "HiPPO significa:",
+        "opciones": [
+            "Highest Paid Person's Opinion",
+            "Highest Performance Professional Objective",
+            "Hybrid Intelligent Processing Operator",
+            "High Priority Project Office"
+        ],
+        "correcta": 0,
+        "explicacion": "HiPPO = Highest Paid Person's Opinion. Anti-HiPPOs promueve decisiones basadas en datos frente a la opinión del mejor pagado.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 238,
+        "tema": 5,
+        "pregunta": "El gobierno de datos NO incluye típicamente:",
+        "opciones": [
+            "Calidad",
+            "Seguridad",
+            "Privacidad",
+            "Diseño de moda"
+        ],
+        "correcta": 3,
+        "explicacion": "El gobierno de datos abarca calidad, seguridad, privacidad, metadatos, acceso, arquitectura y ciclo de vida, no diseño de moda.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 239,
+        "tema": 6,
+        "pregunta": "¿Cuál es la última fase del ciclo de vida actualizado de 9 fases?",
+        "opciones": [
+            "Visualización",
+            "Evaluación",
+            "Operacionalización y despliegue en producción",
+            "Ingeniería de características"
+        ],
+        "correcta": 2,
+        "explicacion": "La novena fase es operacionalizar y desplegar el proyecto en producción.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 240,
+        "tema": 6,
+        "pregunta": "Un KPI debe ser principalmente:",
+        "opciones": [
+            "Subjetivo",
+            "Cuantificable",
+            "Secreto",
+            "Estático"
+        ],
+        "correcta": 1,
+        "explicacion": "Un KPI es un indicador cuantificable del progreso hacia un resultado deseado.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 241,
+        "tema": 6,
+        "pregunta": "¿Cuál de estas tareas pertenece a la fase de obtención y preparación de datos?",
+        "opciones": [
+            "Definir objetivos de negocio",
+            "Imputación de valores faltantes",
+            "Presentar resultados al CEO",
+            "Desplegar el modelo"
+        ],
+        "correcta": 1,
+        "explicacion": "La imputación de valores faltantes forma parte de la limpieza y preparación de datos.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 242,
+        "tema": 6,
+        "pregunta": "El EDA se utiliza para:",
+        "opciones": [
+            "Entrenar el modelo final",
+            "Explorar distribuciones, valores faltantes y relaciones entre variables",
+            "Escribir el contrato del proyecto",
+            "Contratar al equipo"
+        ],
+        "correcta": 1,
+        "explicacion": "El EDA (Exploratory Data Analysis) examina distribuciones, valores faltantes, outliers y relaciones antes de modelar.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 243,
+        "tema": 6,
+        "pregunta": "Según Thomson Nguyen, ¿qué porcentaje del tiempo se dedica a limpiar datos?",
+        "opciones": [
+            "20%",
+            "50%",
+            "80%",
+            "95%"
+        ],
+        "correcta": 2,
+        "explicacion": "Thomson Nguyen afirmó que el 80% de su tiempo se dedicaba a limpiar datos y que mejores datos vencen a mejores modelos.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 244,
+        "tema": 6,
+        "pregunta": "The Netflix Prize es un ejemplo de:",
+        "opciones": [
+            "Un modelo mecanístico",
+            "Una competición de construcción y selección de modelos",
+            "Una técnica de limpieza de datos",
+            "Un tipo de overfitting"
+        ],
+        "correcta": 1,
+        "explicacion": "The Netflix Prize ilustra la construcción de múltiples modelos y su selección según métricas y restricciones.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 245,
+        "tema": 6,
+        "pregunta": "Un modelo que predice nuevos valores sin explicar la influencia de las entradas es:",
+        "opciones": [
+            "Descriptivo",
+            "Exploratorio",
+            "Predictivo",
+            "Causal"
+        ],
+        "correcta": 2,
+        "explicacion": "El modelo predictivo predice nuevos valores sin explicar la influencia de los parámetros de entrada.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 246,
+        "tema": 6,
+        "pregunta": "Un modelo que explica exactamente cómo varía la salida según las entradas es:",
+        "opciones": [
+            "Causal",
+            "Mecanístico",
+            "Inferencial",
+            "Exploratorio"
+        ],
+        "correcta": 1,
+        "explicacion": "El modelo mecanístico explica exactamente cómo varía la salida en función de los parámetros de entrada.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 247,
+        "tema": 6,
+        "pregunta": "La regularización se usa para:",
+        "opciones": [
+            "Aumentar la complejidad del modelo",
+            "Penalizar la complejidad y evitar el sobreajuste",
+            "Eliminar todos los datos de entrenamiento",
+            "Aumentar la velocidad del hardware"
+        ],
+        "correcta": 1,
+        "explicacion": "La regularización penaliza la complejidad del modelo para evitar que se ajuste demasiado a los datos de entrenamiento.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 248,
+        "tema": 6,
+        "pregunta": "¿Qué técnica detiene el entrenamiento cuando el rendimiento en validación deja de mejorar?",
+        "opciones": [
+            "Validación cruzada",
+            "Regularización",
+            "Early stopping",
+            "Data augmentation"
+        ],
+        "correcta": 2,
+        "explicacion": "Early stopping detiene el entrenamiento cuando el rendimiento en el conjunto de validación deja de mejorar.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 249,
+        "tema": 6,
+        "pregunta": "¿Quién dijo 'All models are wrong, some models are useful'?",
+        "opciones": [
+            "Albert Einstein",
+            "George E.P. Box",
+            "Donald Knuth",
+            "Thomson Nguyen"
+        ],
+        "correcta": 1,
+        "explicacion": "La cita es de George E.P. Box: 'All models are wrong; the practical question is how wrong do they have to be to not be useful.'",
+        "fuente": "teoria"
+    },
+    {
+        "id": 250,
+        "tema": 6,
+        "pregunta": "MLOps se refiere a:",
+        "opciones": [
+            "Machine Learning Operations",
+            "Machine Learning Optimization",
+            "Multiple Learning Objects",
+            "Model Learning Office"
+        ],
+        "correcta": 0,
+        "explicacion": "MLOps = Machine Learning Operations, prácticas para desplegar, monitorizar, mantener y actualizar modelos en producción.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 251,
+        "tema": 6,
+        "pregunta": "¿Cuál es la principal cualidad buscada en un científico de datos según el tema?",
+        "opciones": [
+            "Especialización extrema en una sola área",
+            "Amplitud de conocimientos y conexiones entre disciplinas",
+            "Solo experiencia en ventas",
+            "Solo programación en ensamblador"
+        ],
+        "correcta": 1,
+        "explicacion": "El perfil del científico de datos debe ser polifacético, con amplitud de conocimientos y capacidad de conectar disciplinas.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 252,
+        "tema": 6,
+        "pregunta": "¿Quién creó Pandas y Apache Arrow?",
+        "opciones": [
+            "Hadley Wickham",
+            "Wes McKinney",
+            "David Robinson",
+            "Jenny Bryan"
+        ],
+        "correcta": 1,
+        "explicacion": "Wes McKinney es el creador de Pandas y Apache Arrow.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 253,
+        "tema": 6,
+        "pregunta": "¿Quién creó el tidyverse y tidymodels?",
+        "opciones": [
+            "Wes McKinney",
+            "Hadley Wickham",
+            "David Robinson",
+            "Jenny Bryan"
+        ],
+        "correcta": 1,
+        "explicacion": "Hadley Wickham creó el tidyverse y tidymodels en R.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 254,
+        "tema": 6,
+        "pregunta": "¿Quién fue científica de datos en Arsenal FC según el tema?",
+        "opciones": [
+            "Jenny Bryan",
+            "Hilary Parker",
+            "Susana Ferreras",
+            "Hadley Wickham"
+        ],
+        "correcta": 2,
+        "explicacion": "Susana Ferreras trabajó como científica de datos en Arsenal FC y fue delegada de la selección femenina española de baloncesto.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 255,
+        "tema": 6,
+        "pregunta": "¿Quién coanfitriona el podcast Not So Standard Deviations?",
+        "opciones": [
+            "Wes McKinney",
+            "David Robinson",
+            "Hilary Parker",
+            "Susana Ferreras"
+        ],
+        "correcta": 2,
+        "explicacion": "Hilary Parker coanfitriona el podcast Not So Standard Deviations con Roger D. Peng.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 256,
+        "tema": 6,
+        "pregunta": "¿Qué empresa validó solo el 25% de estudios oncológicos según el tema?",
+        "opciones": [
+            "Amgen",
+            "Bayer HealthCare",
+            "Pfizer",
+            "Novartis"
+        ],
+        "correcta": 1,
+        "explicacion": "Bayer HealthCare validó solo el 25% de estudios oncológicos; Amgen confirmó solo 6 de 53 artículos emblemáticos.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 257,
+        "tema": 6,
+        "pregunta": "Amgen confirmó solo 6 de 53 artículos emblemáticos en el área de:",
+        "opciones": [
+            "Psicología",
+            "Oncología",
+            "Economía",
+            "Meteorología"
+        ],
+        "correcta": 1,
+        "explicacion": "Amgen confirmó solo 6 de 53 artículos emblemáticos en oncología.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 258,
+        "tema": 6,
+        "pregunta": "En psicología, ¿qué porcentaje de autores no respondió sobre sus datos en 6 meses?",
+        "opciones": [
+            "25%",
+            "50%",
+            "73%",
+            "90%"
+        ],
+        "correcta": 2,
+        "explicacion": "De 249 artículos de la APA, el 73% de los autores no respondió sobre sus datos en 6 meses.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 259,
+        "tema": 6,
+        "pregunta": "¿Quién escribió 'Why Most Published Research Findings Are False'?",
+        "opciones": [
+            "Donald Knuth",
+            "John Ioannidis",
+            "Roger Peng",
+            "Geoffrey Hinton"
+        ],
+        "correcta": 1,
+        "explicacion": "John Ioannidis publicó 'Why Most Published Research Findings Are False' en PLoS Medicine en 2005.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 260,
+        "tema": 6,
+        "pregunta": "La programación literaria fue propuesta por:",
+        "opciones": [
+            "Albert Einstein",
+            "Donald Knuth",
+            "George E.P. Box",
+            "Thomson Nguyen"
+        ],
+        "correcta": 1,
+        "explicacion": "Donald Knuth propuso la programación literaria en 1992 para documentar el código como una obra de literatura.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 261,
+        "tema": 6,
+        "pregunta": "¿Cuál es la diferencia fundamental entre reproducibilidad y replicabilidad?",
+        "opciones": [
+            "No hay diferencia",
+            "Reproducibilidad usa los mismos datos; replicabilidad usa datos diferentes",
+            "Reproducibilidad es solo para software; replicabilidad solo para hardware",
+            "Reproducibilidad es obligatoria; replicabilidad está prohibida"
+        ],
+        "correcta": 1,
+        "explicacion": "Reproducibilidad recomputa resultados con los mismos datos; replicabilidad realiza un experimento independiente con datos diferentes.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 262,
+        "tema": 6,
+        "pregunta": "¿Qué paquete Python se menciona en la Actividad 2 para resúmenes descriptivos?",
+        "opciones": [
+            "pandas",
+            "summarytools",
+            "matplotlib",
+            "tensorflow"
+        ],
+        "correcta": 1,
+        "explicacion": "La Actividad 2 utiliza el paquete Python summarytools para obtener resúmenes descriptivos en el EDA.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 263,
+        "tema": 6,
+        "pregunta": "El documento 'What is the question?' de Leek & Peng se usa en la Actividad 2 para:",
+        "opciones": [
+            "Elegir el dataset",
+            "Clasificar el tipo de análisis/modelo",
+            "Instalar Python",
+            "Crear una base de datos"
+        ],
+        "correcta": 1,
+        "explicacion": "'What is the question?' de Leek & Peng sirve para identificar el tipo de análisis o modelo según la clasificación del documento.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 264,
+        "tema": 6,
+        "pregunta": "¿Qué plataforma se menciona como recurso para encontrar proyectos de ejemplo?",
+        "opciones": [
+            "LinkedIn",
+            "Kaggle",
+            "TikTok",
+            "Spotify"
+        ],
+        "correcta": 1,
+        "explicacion": "Kaggle se menciona como plataforma útil para encontrar proyectos de ejemplo, aunque no debe limitarse a competiciones.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 265,
+        "tema": 6,
+        "pregunta": "Un análisis que comprueba si patrones se mantienen en otros datasets sin hacer predicciones es:",
+        "opciones": [
+            "Descriptivo",
+            "Inferencial",
+            "Predictivo",
+            "Mecanístico"
+        ],
+        "correcta": 1,
+        "explicacion": "El análisis inferencial comprueba si patrones observados se mantienen en otros conjuntos de datos sin hacer predicciones.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 266,
+        "tema": 6,
+        "pregunta": "Un modelo demasiado simple que no captura los patrones de entrenamiento está sufriendo:",
+        "opciones": [
+            "Overfitting",
+            "Underfitting",
+            "Regularización",
+            "Early stopping"
+        ],
+        "correcta": 1,
+        "explicacion": "El underfitting ocurre cuando el modelo es demasiado simple y no captura los patrones de los datos de entrenamiento.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 267,
+        "tema": 6,
+        "pregunta": "¿Cuál de estos NO es un elemento necesario para la replicabilidad?",
+        "opciones": [
+            "Conjuntos de datos",
+            "Infraestructura equivalente",
+            "Software y código",
+            "Secreto comercial sobre la metodología"
+        ],
+        "correcta": 3,
+        "explicacion": "La replicabilidad requiere datos, infraestructura equivalente, software/código y metodología detallada, no secreto comercial.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 268,
+        "tema": 6,
+        "pregunta": "Según Einstein citado en el tema, los modelos deben ser:",
+        "opciones": [
+            "Tan complejos como sea posible",
+            "Tan simples como sea posible, pero no más",
+            "Siempre mecanísticos",
+            "Siempre causales"
+        ],
+        "correcta": 1,
+        "explicacion": "Einstein: 'Everything should be made as simple as possible, but not simpler.'",
+        "fuente": "teoria"
+    },
+    {
+        "id": 269,
+        "tema": 6,
+        "pregunta": "El control de versiones con Git favorece principalmente:",
+        "opciones": [
+            "La reproducibilidad y colaboración",
+            "El overfitting",
+            "La eliminación de datos",
+            "La compra de hardware"
+        ],
+        "correcta": 0,
+        "explicacion": "Git registra cambios en código y datos, favoreciendo la reproducibilidad, la colaboración y la recuperación de estados anteriores.",
+        "fuente": "teoria"
+    },
+    {
+        "id": 270,
+        "tema": 6,
+        "pregunta": "Un portfolio recomendado para un científico de datos incluye:",
+        "opciones": [
+            "Solo currículum en papel",
+            "Repositorios públicos y un blog",
+            "Solo certificados universitarios",
+            "Solo redes sociales"
+        ],
+        "correcta": 1,
+        "explicacion": "Se recomienda crear un portfolio con repositorios públicos y un blog para mostrar proyectos y conocimientos.",
+        "fuente": "teoria"
+    }
 ];
