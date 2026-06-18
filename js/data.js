@@ -2,7 +2,7 @@ const theoryData = [
     {
         id: 5,
         title: "Tema 5 - Cultura del dato y decisiones basadas en datos",
-        summary: "Factores palanca, toma de decisiones data-driven, modelos operativos de ciencia de datos y marcos de madurez.",
+        summary: "Factores palanca, toma de decisiones data-driven, modelos operativos, marcos de madurez, transformación digital y el contexto de la burbuja de la IA generativa.",
         sections: [
             {
                 title: "5.1 ¿Qué es la Ciencia de Datos?",
@@ -171,13 +171,64 @@ const theoryData = [
                     <p>El gobierno de datos abarca dimensiones como calidad, seguridad, privacidad, metadatos, acceso, arquitectura y gestión de ciclo de vida.</p>
                     <p>El <span class="keyword">ciclo de vida de los datos</span> incluye generación, recolección, almacenamiento, procesamiento, uso, compartición, archivado y destrucción segura.</p>
                 `
+            },
+            {
+                title: "5.4 La burbuja de la IA generativa",
+                content: `
+                    <p>El auge de la <span class="keyword">Inteligencia Artificial Generativa (GenIA)</span> ha generado enorme inversión, pero también creciente escepticismo sobre su rentabilidad real.</p>
+                    <h4>Estudio del MIT NANDA (agosto 2025)</h4>
+                    <p>El informe <em>"The GenAI Divide: State of AI in Business 2025"</em>, de Aditya Challapally, Chris Pease, Ramesh Raskar y Pradyumna Chari, concluye que:</p>
+                    <ul>
+                        <li>El <strong>95% de las organizaciones</strong> obtiene <strong>cero retorno</strong> de sus inversiones en GenIA.</li>
+                        <li>Solo el <strong>5% de los proyectos piloto</strong> consigue buen rendimiento económico.</li>
+                        <li>La <strong>inversión corporativa en GenIA</strong> se sitúa entre <strong>30.000 y 40.000 millones de dólares</strong>.</li>
+                    </ul>
+                    <h4>Brecha GenIA</h4>
+                    <p>Diferencia acusada entre <strong>compradores</strong> (empresas, PYMEs, mercado intermediario) y <strong>creadores</strong> (startups, consultoras, vendedores) de soluciones GenIA. Sus cuatro patrones son:</p>
+                    <ol>
+                        <li><strong>Disrupción limitada:</strong> solo contenidos digitales/telecomunicaciones y servicios profesionales han logrado mejoras de eficiencia significativas.</li>
+                        <li><strong>Paradoja empresarial:</strong> las grandes firmas lideran en proyectos piloto pero quedan rezagadas en escalabilidad.</li>
+                        <li><strong>Sesgo de inversión:</strong> los presupuestos se destinan a proyectos visibles y de alto nivel, no a equipos o procesos internos de alto ROI.</li>
+                        <li><strong>Ventaja de implementación:</strong> los proyectos con alianzas externas tienen el doble de tasa de éxito que los internos.</li>
+                    </ol>
+                    <h4>Impuesto de verificación y alucinaciones</h4>
+                    <p><span class="keyword">Impuesto de verificación</span>: coste adicional derivado de la necesidad de verificar forensemente (a posteriori) todas las respuestas de la GenIA, ya que no puede evaluarse a sí misma ni estimar objetivamente su certeza. Acuñado por <strong>Tanmai Gopal</strong> (CEO de PromptQL).</p>
+                    <p>Las <span class="keyword">alucinaciones</span> son respuestas incorrectas o inventadas generadas por modelos de GenIA; en aplicaciones críticas sigue siendo imprescindible la supervisión humana.</p>
+                    <h4>Impacto en mercado y figuras clave</h4>
+                    <ul>
+                        <li><strong>Sam Altman</strong> (OpenAI/Microsoft) admitió a principios de septiembre de 2025 problemas en el despliegue de GPT-5 en clientes.</li>
+                        <li><strong>Jensen Huang</strong> (NVIDIA) advirtió que podríamos estar llegando a un límite en la capacidad de escalar el entrenamiento de modelos de IA.</li>
+                        <li>Tras el informe del MIT, <strong>NVIDIA cayó alrededor de un 10%</strong> en 15 días. En abril de 2025 había caído hasta un <strong>26%</strong> por temor a aranceles comerciales de Donald Trump.</li>
+                        <li>Capitalización de NVIDIA en octubre de 2025: aproximadamente <strong>4,567 billones de dólares</strong>.</li>
+                    </ul>
+                    <h4>Lecciones para proyectos de ciencia de datos</h4>
+                    <p>Para evitar proyectos inviables, conviene seguir metodologías como <span class="keyword">CRISP-DM</span>, definir un caso de negocio claro desde el diseño, evaluar la calidad de los datos de entrenamiento, controlar el coste de la infraestructura computacional (cloud) y gestionar las expectativas a corto plazo.</p>
+                    <h4>P&L y ROI</h4>
+                    <p>El <span class="keyword">P&L</span> (Profit and Loss) es la declaración de pérdidas y ganancias. El <span class="keyword">ROI</span> (Return on Investment) mide el retorno de la inversión. La sostenibilidad de un proyecto GenIA debe demostrarse en términos de impacto real en P&L y ROI, no solo en visibilidad.</p>
+                `
+            },
+            {
+                title: "5.4 Referencias del tema",
+                content: `
+                    <ul>
+                        <li>Aiken, P. & Harbour, T. <em>Data Strategy and the Enterprise Data Executive</em>.</li>
+                        <li>Booz Allen Hamilton (2013). <em>The Field Guide to Data Science</em>.</li>
+                        <li>Dehghani, Z. (2022). <em>Data Mesh</em>.</li>
+                        <li>Dietrich, D. et al. (2014). <em>Data Science & Big Data Analytics</em>.</li>
+                        <li>Eckerson, W. (2012). <em>Secrets of Analytical Leaders</em>.</li>
+                        <li>Eryurek, E. et al. (2021). <em>Data Governance</em>.</li>
+                        <li>Finch, A. et al. <em>Data Science for Business</em>.</li>
+                        <li>Territorio Creativo / Good Rebels (2015). <em>I Estudio de Transformación Digital en la Empresa Española</em>.</li>
+                        <li>MIT NANDA (2025). <em>The GenAI Divide: State of AI in Business 2025</em>.</li>
+                    </ul>
+                `
             }
         ]
     },
     {
         id: 6,
         title: "Tema 6 - Proyectos de Ciencia e Ingeniería de Datos",
-        summary: "Ciclo de vida CRISP-DM, roles y perfiles, reproducibilidad, tipos de modelos y MLOps.",
+        summary: "Ciclo de vida CRISP-DM, fases detalladas, tipos de modelos, overfitting, MLOps, perfiles profesionales, reproducibilidad, replicabilidad y buenas prácticas.",
         sections: [
             {
                 title: "6.1 El ciclo de vida de los proyectos: metodología",
@@ -211,7 +262,7 @@ const theoryData = [
                 `
             },
             {
-                title: "6.1 Fases en detalle",
+                title: "6.1 Fases en detalle: objetivos y datos",
                 content: `
                     <h4>Fase 1: Definición de objetivos</h4>
                     <p>Concepto clave: <span class="keyword">KPI</span> (Key Performance Indicator). Indicadores clave de rendimiento que miden el éxito de una organización. Deben ser cuantificables, pueden ser cuantitativos o cualitativos, y siempre se basan en una comprensión detallada de los aspectos críticos.</p>
@@ -219,22 +270,22 @@ const theoryData = [
                     <p>En el ámbito empresarial, los proyectos de datos deben alinearse con indicadores financieros como el <span class="keyword">P&L</span> (Profit and Loss, Pérdidas y Ganancias), que refleja el resultado económico de la organización.</p>
                     <h4>Fase 2: Obtención y preparación de datos</h4>
                     <ul>
-                        <li>Obtención de datos: múltiples fuentes (offline vs. tiempo real).</li>
-                        <li>Almacenamiento: estructurados vs. no estructurados, datos enlazados, metadatos y estándares.</li>
-                        <li>Limpieza y organización: imputación de valores faltantes, eliminación de duplicados.</li>
-                        <li>Tratamiento: ontologías, identificación/extracción de datos relevantes.</li>
-                        <li>Cómputo y paralelización: particionado, compresión, multiprocesado, cloud computing, paradigmas como MapReduce.</li>
+                        <li><strong>Obtención de datos:</strong> múltiples fuentes (offline vs. tiempo real).</li>
+                        <li><strong>Almacenamiento:</strong> datos estructurados vs. no estructurados, datos enlazados, metadatos y estándares.</li>
+                        <li><strong>Limpieza y organización:</strong> imputación de valores faltantes, eliminación de duplicados, corrección de errores.</li>
+                        <li><strong>Tratamiento:</strong> ontologías, identificación y extracción de datos relevantes.</li>
+                        <li><strong>Cómputo y paralelización:</strong> particionado, compresión, multiprocesado, clusters, cloud computing, paradigmas como MapReduce.</li>
                     </ul>
                     <h4>Diccionario de datos y EDA</h4>
-                    <p>El <span class="keyword">diccionario de datos</span> es un documento que recoge, para cada variable: nombre, naturaleza, descripción, valores posibles y rango. Es fundamental para que cualquier persona del equipo comprenda el significado de los datos.</p>
+                    <p>El <span class="keyword">diccionario de datos</span> es un documento que recoge, para cada variable: nombre, naturaleza (cuantitativa, cualitativa, timestamp...), descripción, valores posibles y rango. Es fundamental para que cualquier persona del equipo comprenda el significado de los datos.</p>
                     <p>El <span class="keyword">EDA</span> (Exploratory Data Analysis o Análisis Exploratorio de Datos) examina distribuciones, valores faltantes, outliers y relaciones entre variables para entender la estructura de los datos antes de modelar.</p>
                     <blockquote>"80% of my time was spent cleaning the data. Better data will always beat better models." — Thomson Nguyen</blockquote>
                 `
             },
             {
-                title: "6.1 Fase 3: construcción de modelos",
+                title: "6.1 Construcción de modelos",
                 content: `
-                    <p>Se construyen uno o varios modelos para resolver el objetivo marcado. La elección depende de costes, tiempo, recursos y requisitos.</p>
+                    <p>Se construyen uno o varios modelos para resolver el objetivo marcado. La elección depende de costes, tiempo, recursos y requisitos. Un ejemplo clásico es <strong>The Netflix Prize</strong>, donde múltiples modelos compitieron y se seleccionaron según métricas y restricciones.</p>
                     <h4>Tipos de modelos según Leek y Peng</h4>
                     <ul>
                         <li><span class="keyword">Descriptivo</span>: resúmenes de los datos sin interpretación.</li>
@@ -259,21 +310,22 @@ const theoryData = [
                 `
             },
             {
-                title: "6.1 Fases 4-6: evaluación, visualización y despliegue",
+                title: "6.1 Evaluación, visualización y despliegue",
                 content: `
                     <h4>Fase 4: Evaluación / comparación de modelos</h4>
-                    <p>Proceso iterativo de creación, comparación y mejora. Se usan métricas de rendimiento para elegir el modelo más adecuado.</p>
+                    <p>Proceso iterativo de creación, comparación y mejora. Se usan métricas de rendimiento para elegir el modelo más adecuado según los objetivos de negocio.</p>
                     <h4>Fase 5: Visualización y presentación</h4>
-                    <p>Si no se comunican bien los resultados, el trabajo habrá sido en balde. Hay que ajustar el nivel de detalle al público. La representación gráfica es fundamental.</p>
+                    <p>Si no se comunican bien los resultados, el trabajo habrá sido en balde. Hay que ajustar el nivel de detalle al público. La representación gráfica es fundamental para transmitir insights de forma clara.</p>
                     <h4>Fase 6: Despliegue en producción</h4>
-                    <p>Importancia creciente del despliegue, monitorización, mantenimiento y actualización. Surge el concepto de <span class="keyword">MLOps</span> (Machine Learning Operations).</p>
+                    <p>La importancia del despliegue, monitorización, mantenimiento y actualización de modelos ha crecido enormemente. De aquí surge el concepto de <span class="keyword">MLOps</span> (Machine Learning Operations).</p>
+                    <p><span class="keyword">MLOps</span> engloba las prácticas necesarias para poner modelos en producción de forma fiable, monitorizar su rendimiento, reentrenarlos y mantenerlos a lo largo del tiempo.</p>
                 `
             },
             {
-                title: "6.2 Roles y perfiles",
+                title: "6.2 Roles y perfiles profesionales",
                 content: `
-                    <h4>Perfil del científico de datos</h4>
-                    <p>Debe ser polifacético; es más importante la amplitud de conocimientos y las conexiones entre disciplinas que la profundidad en una sola.</p>
+                    <h4>Perfil del científico/a de datos</h4>
+                    <p>Debe ser polifacético; es más importante la <strong>amplitud de conocimientos</strong> y las conexiones entre disciplinas que la profundidad en una sola.</p>
                     <ul>
                         <li>Desarrollo de software, redes, sistemas de información.</li>
                         <li>Teoría de la información, procesamiento de señales.</li>
@@ -284,18 +336,33 @@ const theoryData = [
                     </ul>
                     <p>Es aconsejable crear un <strong>portfolio</strong> con repositorios públicos y un blog. Perfiles avanzados pueden incluir libros, artículos o tutoriales.</p>
                     <p>Cada organización puede tener un concepto diferente del científico de datos que busca. Cuidado con ofertas de perfiles "unicornio" que deberían cubrirse con varias personas.</p>
+                    <h4>Ejemplos de perfiles reales</h4>
+                    <ul>
+                        <li><strong>David Robinson:</strong> creador de paquetes R como <em>broom</em> y <em>tidytext</em>; coautor de <em>Tidy Text Mining</em>.</li>
+                        <li><strong>Hadley Wickham:</strong> creador del <em>tidyverse</em> y <em>tidymodels</em>; autor de <em>R for Data Science</em>.</li>
+                        <li><strong>Wes McKinney:</strong> creador de <em>Pandas</em> y <em>Apache Arrow</em>; autor de <em>Python for Data Analysis</em>.</li>
+                        <li><strong>Jenny Bryan:</strong> desarrolladora de <em>usethis</em> y APIs de Google Drive para R; autora de <em>Stat 545</em> y <em>Happy Git with R</em>.</li>
+                        <li><strong>Susana Ferreras:</strong> científica de datos en Arsenal FC y delegada de la selección femenina española de baloncesto.</li>
+                        <li><strong>Hilary Parker:</strong> científica de datos; coanfitriona del podcast <em>Not So Standard Deviations</em> con Roger D. Peng.</li>
+                    </ul>
+                    <p><strong>Kaggle</strong> es una plataforma útil para encontrar proyectos de ejemplo, aunque no debe limitarse a competiciones.</p>
                 `
             },
             {
                 title: "6.3 Reproducibilidad y replicabilidad",
                 content: `
-                    <h4>Problema de la reproducibilidad</h4>
-                    <p>En áreas como oncología, psicología o economía se han encontrado dificultades para replicar estudios. Esto cuestiona la fiabilidad de muchas investigaciones.</p>
+                    <h4>La crisis de la reproducibilidad</h4>
+                    <p>En áreas como oncología, psicología o economía se han encontrado dificultades para replicar estudios. Esto cuestiona la fiabilidad de muchas investigaciones y pone de relieve la importancia de métodos transparentes.</p>
+                    <ul>
+                        <li><strong>Oncología:</strong> Amgen confirmó solo <strong>6 de 53</strong> artículos emblemáticos; Bayer HealthCare validó solo el <strong>25%</strong> de estudios.</li>
+                        <li><strong>Psicología:</strong> de 249 artículos de la APA, el <strong>73%</strong> de los autores no respondió sobre sus datos en 6 meses.</li>
+                        <li><strong>Economía y finanzas:</strong> diferentes paquetes software producen resultados distintos con las mismas técnicas sobre datos idénticos.</li>
+                    </ul>
                     <h4>Reproducibilidad</h4>
                     <p>Capacidad para recomputar los resultados de un análisis con los <strong>mismos datos</strong> y conociendo los detalles del pipeline. Requiere datos, código y procedimiento.</p>
                     <h4>Replicabilidad</h4>
                     <p>Capacidad de realizar un experimento independiente con un <strong>conjunto de datos diferente</strong> del original. Si los resultados no son consistentes, se necesitan más réplicas y meta-análisis.</p>
-                    <h4>Elementos necesarios</h4>
+                    <h4>Elementos necesarios para la replicabilidad</h4>
                     <ul>
                         <li>Conjuntos de datos utilizados.</li>
                         <li>Infraestructura equivalente.</li>
@@ -304,7 +371,39 @@ const theoryData = [
                     </ul>
                     <h4>Control de versiones</h4>
                     <p>El <span class="keyword">control de versiones</span> (por ejemplo con Git) registra los cambios en el código y, cuando es posible, en los datos. Es una práctica esencial para favorecer la reproducibilidad, facilitar la colaboración y poder volver a estados anteriores del proyecto.</p>
-                    <p>La <span class="keyword">programación literaria</span> (Donald Knuth) promueve documentar el código como una obra de literatura para mejorar la reproducibilidad.</p>
+                    <h4>Programación literaria</h4>
+                    <p>La <span class="keyword">programación literaria</span> (Donald Knuth, 1992) promueve documentar el código como una obra de literatura para mejorar la reproducibilidad y comprensión del análisis.</p>
+                `
+            },
+            {
+                title: "6.3 Actividad 2: EDA, Kaggle y comunicación",
+                content: `
+                    <p>La Actividad 2 aplica el ciclo de vida de proyectos de ciencia de datos a un caso práctico:</p>
+                    <ol>
+                        <li><strong>Selección de dataset:</strong> elegir un conjunto de datos y formular preguntas contestables. Crear un diccionario de datos.</li>
+                        <li><strong>Análisis Exploratorio de Datos (EDA):</strong> usar herramientas como el paquete Python <span class="keyword">summarytools</span> para obtener resúmenes descriptivos, detectar valores faltantes, outliers y tipos incorrectos.</li>
+                        <li><strong>Modelos y comunicación:</strong> analizar notebooks de Kaggle, identificar el tipo de análisis según Leek & Peng, y crear un titular, un párrafo para no técnicos y un gráfico autocontenido.</li>
+                    </ol>
+                    <p>Documento de referencia clave: <strong>Leek & Peng (2015), "What is the question?"</strong>, publicado en <em>Science</em>.</p>
+                `
+            },
+            {
+                title: "6.3 Referencias del tema",
+                content: `
+                    <ul>
+                        <li>Barba, L.A. "Terminologies for reproducible research". arXiv:1802.03311 (2018).</li>
+                        <li>Brainard, J. et al. "What a massive database of retracted papers reveals about science publishing's 'death penalty'". Science (2018).</li>
+                        <li>Burman, L.E. et al. "A call for replication studies". Public Finance Review (2010).</li>
+                        <li>Begley, C.G. & Ellis, L.M. "Drug development: Raise standards for preclinical cancer research". Nature (2012).</li>
+                        <li>Healy, K. <em>Data visualization: A practical introduction</em>. Princeton University Press, 2018.</li>
+                        <li>Ioannidis, J.P.A. "Why Most Published Research Findings Are False". PLoS Medicine (2005).</li>
+                        <li>Lakshmanan, V. et al. <em>Machine Learning Design Patterns</em>. O'Reilly, 2020.</li>
+                        <li>Leek, J.T. & Peng, R.D. "Reproducible research can still be wrong: adopting a prevention approach". PNAS (2015).</li>
+                        <li>Peng, R.D. "Reproducible research in computational science". Science (2011).</li>
+                        <li>Provost, F. & Fawcett, T. <em>Data Science for Business</em>. O'Reilly, 2013.</li>
+                        <li>Robinson, E. & Nolis, J. <em>Build a Career in Data Science</em>. Manning, 2020.</li>
+                        <li>Wicherts, J.M. et al. "The poor availability of psychological research data for reanalysis". American Psychologist (2006).</li>
+                    </ul>
                 `
             }
         ]
@@ -555,145 +654,196 @@ const theoryData = [
 
 const flashcardsData = [
     { id: 1, tema: 5, anverso: "Ciencia de Datos", reverso: "Área que integra computación, matemáticas, estadística y conocimiento experto de un dominio para resolver problemas y tomar decisiones mediante datos." },
-    { id: 2, tema: 5, anverso: "Transformación digital: áreas de actuación", reverso: "El cliente, el negocio y la empresa (procesos, liderazgo, cultura)." },
-    { id: 3, tema: 5, anverso: "Palancas de activación", reverso: "Evidencias + conocimiento de negocio; métricas; plataformas hardware/software para Big Data." },
-    { id: 4, tema: 5, anverso: "Palancas de dirección", reverso: "Cultura del dato; estrategia y gobierno de datos; confianza y transparencia." },
-    { id: 5, tema: 5, anverso: "Palancas de amplificación", reverso: "Visión común; gestión de inversiones; compartir conocimientos dentro y fuera de la empresa." },
-    { id: 6, tema: 5, anverso: "Data-driven organization", reverso: "Organización que usa datos para informar decisiones combinándolos con experiencia humana (IA + IH)." },
-    { id: 7, tema: 5, anverso: "Modelo operativo centralizado", reverso: "Un único equipo de Ciencia de Datos actúa como consultoría interna." },
-    { id: 8, tema: 5, anverso: "Modelo operativo desplegado", reverso: "Equipo central + equipos avanzados en unidades de negocio que hacen de puente." },
-    { id: 9, tema: 5, anverso: "Modelo operativo difuso", reverso: "Unidades de Ciencia de Datos en cada negocio sin equipo central. Riesgo de repetición de esfuerzos." },
-    { id: 10, tema: 5, anverso: "Data Science Maturity Model", reverso: "Collect → Describe → Discover → Predict → Advise. El más avanzado es Advise." },
-    { id: 11, tema: 5, anverso: "Data Mesh", reverso: "Dato y código como una misma unidad; propiedad descentralizada de dominios de datos." },
-    { id: 12, tema: 5, anverso: "CDO / CAO / CDS / CRS", reverso: "Chief Data Officer, Chief Analytics/Algorithms Officer, Chief Data Scientist, Chief Research Scientist." },
-    { id: 13, tema: 6, anverso: "CRISP-DM", reverso: "Cross-Industry Standard Process for Data Mining. 6 fases iterativas: negocio, datos, preparación, modelado, evaluación, despliegue." },
-    { id: 14, tema: 6, anverso: "KPI", reverso: "Key Performance Indicator. Indicador cuantificable del éxito de una organización." },
-    { id: 15, tema: 6, anverso: "Modelo descriptivo", reverso: "Resúmenes de datos sin interpretación." },
-    { id: 16, tema: 6, anverso: "Modelo exploratorio", reverso: "Interpretación del modelo sin analizar si es aplicable a otros datos." },
-    { id: 17, tema: 6, anverso: "Modelo inferencial", reverso: "Comprueba si patrones se mantienen en otros conjuntos de datos sin hacer predicciones." },
-    { id: 18, tema: 6, anverso: "Modelo predictivo", reverso: "Predice nuevos valores sin explicar la influencia de los parámetros de entrada." },
-    { id: 19, tema: 6, anverso: "Modelo causal", reverso: "Comprueba cómo cambios en un parámetro afectan a la salida, en valores promedio." },
-    { id: 20, tema: 6, anverso: "Modelo mecanístico", reverso: "Explica exactamente cómo varía la salida según los parámetros de entrada." },
-    { id: 21, tema: 6, anverso: "Overfitting", reverso: "Modelo que se ajusta perfectamente a entrenamiento pero no generaliza a datos nuevos." },
-    { id: 22, tema: 6, anverso: "MLOps", reverso: "Machine Learning Operations: despliegue, monitorización, mantenimiento y actualización de modelos." },
-    { id: 23, tema: 6, anverso: "Reproducibilidad", reverso: "Recomputar resultados con los mismos datos y el mismo pipeline." },
-    { id: 24, tema: 6, anverso: "Replicabilidad", reverso: "Realizar un experimento independiente con datos diferentes." },
-    { id: 25, tema: 6, anverso: "Programación literaria", reverso: "Documentar el código como una obra de literatura (Donald Knuth)." },
-    { id: 26, tema: 8, anverso: "Espacio Único Digital de Datos", reverso: "Iniciativa de la UE para un mercado único de datos seguros. Impulso en 2020." },
-    { id: 27, tema: 8, anverso: "Estrategia Europea de Datos (2020)", reverso: "Hito más importante para el Mercado Único de Datos Europeo en 2020." },
-    { id: 28, tema: 8, anverso: "RGPD / GDPR", reverso: "Reglamento General de Protección de Datos. Aprobado 2016, aplicado 2018." },
-    { id: 29, tema: 8, anverso: "Dividendo digital", reverso: "Beneficios obtenidos por el uso masivo de datos." },
-    { id: 30, tema: 8, anverso: "Pacto Verde Europeo", reverso: "Iniciativa de la UE para alcanzar la neutralidad climática en 2050." },
-    { id: 31, tema: 8, anverso: "CISPE", reverso: "Código de Conducta para Proveedores de Servicios de Infraestructura en la Nube en la UE." },
-    { id: 32, tema: 8, anverso: "FIWARE", reverso: "Plataforma de código abierto para smart cities e IoT." },
-    { id: 33, tema: 8, anverso: "GAIA-X", reverso: "Iniciativa para un ecosistema de datos federado en Europa." },
-    { id: 34, tema: 8, anverso: "Reglamento de IA UE 2024/1689", reverso: "Clasifica riesgos de IA en mínimo, limitado, alto y prohibido." },
-    { id: 35, tema: 8, anverso: "Consumo energético TIC en UE", reverso: "5-9% del consumo eléctrico total y 2% de emisiones contaminantes." },
-    { id: 36, tema: 5, anverso: "Sesgo de inversión", reverso: "Destinar presupuesto de IA a proyectos visibles en lugar de equipos o procesos internos de alto ROI." },
-    { id: 37, tema: 5, anverso: "Data supply chain", reverso: "Flujo de valor de los datasets a lo largo de las fases de negocio." },
-    { id: 38, tema: 6, anverso: "Ciclo de vida actualizado (9 fases)", reverso: "Extensión de CRISP-DM donde la novena fase es operacionalizar y desplegar en producción." },
-    { id: 39, tema: 6, anverso: "Diccionario de datos", reverso: "Documento con nombre, naturaleza, descripción, valores posibles y rango de cada variable." },
-    { id: 40, tema: 6, anverso: "EDA", reverso: "Exploratory Data Analysis: análisis exploratorio de distribuciones, valores faltantes y relaciones." },
-    { id: 41, tema: 6, anverso: "P&L", reverso: "Profit and Loss: declaración de pérdidas y ganancias." },
-    { id: 42, tema: 6, anverso: "Validación cruzada", reverso: "Divide datos en subconjuntos de entrenamiento y validación para evaluar la generalización." },
-    { id: 43, tema: 6, anverso: "Early stopping", reverso: "Detener el entrenamiento cuando el rendimiento en validación deja de mejorar." },
-    { id: 44, tema: 6, anverso: "Underfitting", reverso: "Modelo demasiado simple que no captura los patrones de los datos de entrenamiento." },
-    { id: 45, tema: 6, anverso: "Control de versiones", reverso: "Registro de cambios en código y datos para favorecer la reproducibilidad." },
-    { id: 46, tema: 8, anverso: "CISPE", reverso: "Cloud Infrastructure Services Providers in Europe; código de conducta para proveedores de nube en la UE." },
-    { id: 47, tema: 8, anverso: "FIWARE", reverso: "Plataforma de código abierto para smart cities e IoT impulsada por la UE." },
-    { id: 48, tema: 8, anverso: "GAIA-X", reverso: "Iniciativa para un ecosistema de datos federado en Europa." },
-    { id: 49, tema: 8, anverso: "Libro Blanco sobre IA (2020)", reverso: "Documento de la Comisión Europea publicado en 2020 junto con la Estrategia Europea de Datos, sobre el marco de IA en la UE." },
-    { id: 50, tema: 8, anverso: "Reglamento sobre Gobernanza de Datos", reverso: "Reglamento de noviembre 2020 que establece un marco para la gobernanza intersectorial del acceso y uso de datos en la UE." },
-    { id: 51, tema: 8, anverso: "Inversión en infraestructuras datos UE", reverso: "Primera fase en 2022 con una inversión total prevista de aproximadamente 2.000 millones de euros." },
-    { id: 52, tema: 8, anverso: "G2B", reverso: "Intercambio de datos de la Administración Pública a empresas." },
-    { id: 53, tema: 8, anverso: "B2B", reverso: "Intercambio de datos entre empresas." },
-    { id: 54, tema: 8, anverso: "B2G", reverso: "Intercambio de datos de empresas a la Administración Pública." },
-    { id: 55, tema: 8, anverso: "G2G", reverso: "Intercambio de datos entre administraciones públicas." },
-    { id: 56, tema: 8, anverso: "Data Acquisition", reverso: "Fase de la cadena de valor del dato: adquisición de datos estructurados/no estructurados, eventos, sensores, streams, multimodalidad." },
-    { id: 57, tema: 8, anverso: "Data Analysis", reverso: "Fase de la cadena de valor del dato: stream mining, análisis semántico, ML, extracción de información, datos vinculados." },
-    { id: 58, tema: 8, anverso: "Data Curation", reverso: "Fase de la cadena de valor del dato: validación, anotación, interoperabilidad y garantía de calidad." },
-    { id: 59, tema: 8, anverso: "Data Storage", reverso: "Fase de la cadena de valor del dato: bases en memoria, NoSQL, cloud, escalabilidad, seguridad." },
-    { id: 60, tema: 8, anverso: "Data Usage", reverso: "Fase de la cadena de valor del dato: soporte a decisiones, predicciones, simulaciones, visualización, control." },
-    { id: 61, tema: 8, anverso: "GENIVI Alliance", reverso: "Alianza del sector automoción, ejemplo de coopetition, que ha evolucionado a COVESA." },
-    { id: 62, tema: 8, anverso: "COVESA", reverso: "The Connected Vehicle Systems Alliance. Plataforma de coopetition para sistemas del coche inteligente conectado a IoT." },
-    { id: 63, tema: 8, anverso: "Riesgo mínimo o nulo en IA", reverso: "Sistemas como juegos o filtros de spam. No están regulados en el Reglamento de IA UE 2024/1689." },
-    { id: 64, tema: 8, anverso: "Riesgo limitado en IA", reverso: "Chatbots o generadores de contenido. Obligaciones de transparencia: informar que se interactúa con IA." },
-    { id: 65, tema: 8, anverso: "Riesgo alto en IA", reverso: "Diagnósticos médicos, conducción autónoma, identificación biométrica. Estrictos requisitos de seguridad, transparencia y supervisión humana." },
-    { id: 66, tema: 8, anverso: "Riesgo prohibido en IA", reverso: "Vigilancia masiva sin consentimiento. Completamente prohibidos en el Reglamento de IA UE 2024/1689." },
-    { id: 67, tema: 8, anverso: "ADAC", reverso: "Organización automovilística alemana que detectó la recopilación masiva y poco transparente de datos personales en coches modernos." },
-    { id: 68, tema: 8, anverso: "Blanco móvil (Ciencia de Datos)", reverso: "Metáfora que describe a la Ciencia de Datos como un campo en constante cambio y evolución." },
-    { id: 69, tema: 8, anverso: "Computación cuántica", reverso: "Tendencia futura que puede revolucionar el procesamiento de datos, pero amenaza la ciberseguridad habitual." },
-    { id: 70, tema: 8, anverso: "XAI", reverso: "Aprendizaje máquina explicable. Busca entender por qué los algoritmos toman determinadas decisiones." },
-    { id: 71, tema: 8, anverso: "Sintetización de contenidos", reverso: "Tendencia futura ejemplificada por GPT-3 y sistemas de síntesis de voz natural. Riesgos en atención al cliente." },
-    { id: 72, tema: 8, anverso: "Perfil unicornio", reverso: "Oferta laboral que exige aglutinar muchos conocimientos diversos; en realidad debería cubrirse con varias personas." },
-    { id: 73, tema: 8, anverso: "Storytelling en Ciencia de Datos", reverso: "Habilidad crecientemente importante para comunicar resultados y valor de los proyectos de datos." },
-    { id: 74, tema: 8, anverso: "Cuadratura del círculo (mercado de datos)", reverso: "Reto de la UE: regular y proteger sin frenar la libertad de mercado y la innovación en el Espacio Único de Datos." },
-    { id: 75, tema: 7, anverso: "Industria 4.0", reverso: "Cuarta Revolución Industrial. Término acuñado por Klaus Schwab en 2016. Combina robótica, IA, IoT, drones, vehículos autónomos, genética y materiales avanzados." },
-    { id: 76, tema: 7, anverso: "Klaus Schwab", reverso: "Economista y empresario alemán, fundador del Foro Económico Mundial. Autor de 'The Fourth Industrial Revolution' (2016)." },
-    { id: 77, tema: 7, anverso: "The Fourth Industrial Revolution (2016)", reverso: "Libro de Klaus Schwab que define el impacto de las tecnologías emergentes en el desarrollo humano del siglo XXI." },
-    { id: 78, tema: 7, anverso: "Primera Revolución Industrial", reverso: "Siglo XVIII. Mecanización y máquina de vapor." },
-    { id: 79, tema: 7, anverso: "Segunda Revolución Industrial", reverso: "Propiciada por la electricidad y las telecomunicaciones." },
-    { id: 80, tema: 7, anverso: "Tercera Revolución Industrial", reverso: "Introducción de las tecnologías digitales en los procesos industriales." },
-    { id: 81, tema: 7, anverso: "Cuarta Revolución Industrial: tecnologías", reverso: "Robótica, materiales avanzados, genética, IoT, drones, ingeniería biomédica, vehículos autónomos, IA y aprendizaje automático." },
-    { id: 82, tema: 7, anverso: "Impacto real de Industria 4.0", reverso: "No solo la tecnología, sino los cambios en relaciones humanas, productivas, sociales, políticas y económicas a escala global." },
-    { id: 83, tema: 7, anverso: "GIS", reverso: "Sistema de Información Geográfica. Tecnología de localización e identificación en Industria 4.0." },
-    { id: 84, tema: 7, anverso: "RFID", reverso: "Radio Frequency Identification. Tecnología de identificación mediante radiofrecuencia." },
-    { id: 85, tema: 7, anverso: "Wearable devices", reverso: "Dispositivos vestibles que recogen datos del usuario o del entorno: relojes inteligentes, pulseras de actividad, gafas AR, ropa inteligente." },
-    { id: 86, tema: 7, anverso: "NFV", reverso: "Network Functions Virtualization. Computación elástica y bajo demanda mediante dispositivos virtuales." },
-    { id: 87, tema: 7, anverso: "Riesgos de cadenas de suministro", reverso: "Dependencia globalizada de componentes críticos. Cambios geopolíticos (guerras, tensiones) revelan vulnerabilidades." },
-    { id: 88, tema: 7, anverso: "Microchips como componente crítico", reverso: "La producción de semiconductores es esencial para la estabilidad económica y tecnológica de un país." },
-    { id: 89, tema: 7, anverso: "Inversión IBM en microchips (EE.UU.)", reverso: "20.000 millones de dólares en fabricación de microchips, anunciada en planta visitada por Joe Biden." },
-    { id: 90, tema: 7, anverso: "Objetivo europeo de fabricación de chips", reverso: "Conseguir el 20% del mercado de producción de chips para 2030." },
-    { id: 91, tema: 7, anverso: "Taiwán y semiconductores", reverso: "Principal fabricante de microchips avanzados. Su inestabilidad política puede poner en riesgo el abastecimiento mundial." },
-    { id: 92, tema: 7, anverso: "Estrategia IC 4.0", reverso: "Estrategia Nacional de Industria Conectada 4.0 en España. Busca incrementar valor añadido industrial y empleo cualificado." },
-    { id: 93, tema: 7, anverso: "Objetivos de IC 4.0", reverso: "Incrementar valor añadido y empleo cualificado; favorecer modelo industrial de futuro; desarrollar palancas competitivas diferenciales." },
-    { id: 94, tema: 7, anverso: "UNE 0060", reverso: "Describe los requisitos para que una empresa industrial sea considerada Industria Digital en España." },
-    { id: 95, tema: 7, anverso: "UNE 0061", reverso: "Criterios detallados de evaluación para la Industria Digital en España." },
-    { id: 96, tema: 7, anverso: "HADA", reverso: "Herramienta de Autodiagnóstico Digital Avanzada, implantada por la Secretaría General de Industria." },
-    { id: 97, tema: 7, anverso: "IoT", reverso: "Internet of Things. Objetos físicos con sensores, software y capacidad de conexión para intercambiar datos." },
-    { id: 98, tema: 7, anverso: "Tres capacidades básicas del IoT", reverso: "Sensores para adquirir datos, software/procesamiento y tecnologías de comunicación en red." },
-    { id: 99, tema: 7, anverso: "Computación ubícua", reverso: "Paradigma en el que la computación está presente de forma integrada en el entorno cotidiano. Base del IoT." },
-    { id: 100, tema: 7, anverso: "Características 'Any' del IoT", reverso: "Anywhere/anyplace, anytime/anycontext, anyone/anybody, any service/any business, any path/any network." },
-    { id: 101, tema: 7, anverso: "WSN", reverso: "Wireless Sensor Network. Red de dispositivos con sensores que recogen y transmiten información." },
-    { id: 102, tema: 7, anverso: "Componentes de una WSN", reverso: "Sensor (adquiere datos), sumidero/estación base (recopila y reenvía) y usuarios (procesan la información)." },
-    { id: 103, tema: 7, anverso: "Sensor (WSN)", reverso: "Componente que recoge información sobre el entorno en tiempo real." },
-    { id: 104, tema: 7, anverso: "Sumidero o estación base (WSN)", reverso: "Nodo que recopila información de los sensores para reenviarla a Internet u otra red." },
-    { id: 105, tema: 7, anverso: "Tipos de redes de sensores", reverso: "Multimedia, subacuáticas, bajo tierra, de cuerpo y sensor-actor." },
-    { id: 106, tema: 7, anverso: "Redes sensor-actor", reverso: "WSN que no solo sensan el entorno sino que también actúan sobre él." },
-    { id: 107, tema: 7, anverso: "Topología en estrella", reverso: "Todos los sensores se comunican con un nodo central. Fácil de gestionar pero vulnerable si falla el central." },
-    { id: 108, tema: 7, anverso: "Topología peer-to-peer", reverso: "Los sensores se comunican entre sí. Más compleja pero más eficiente y resiliente." },
-    { id: 109, tema: 7, anverso: "Zigbee", reverso: "Protocolo de comunicación para redes de sensores personales y domótica. Bajo consumo y bajo coste." },
-    { id: 110, tema: 7, anverso: "Raspberry Pi", reverso: "Mini-computador de bajo coste ampliamente usado en proyectos de IoT, educación y prototipado." },
-    { id: 111, tema: 7, anverso: "Arduino", reverso: "Plataforma de hardware libre con microcontroladores para leer sensores y controlar actuadores." },
-    { id: 112, tema: 7, anverso: "Aplicación WSN: incendios forestales", reverso: "Redes de sensores monitorizan temperatura, humedad y humo para detectar incendios." },
-    { id: 113, tema: 7, anverso: "Smart city", reverso: "Ciudad que usa tecnología y datos para mejorar calidad de vida, optimizar recursos y reducir impacto ambiental." },
-    { id: 114, tema: 7, anverso: "Origen del término smart city", reverso: "Apareció a comienzos de la década de 1990." },
-    { id: 115, tema: 7, anverso: "Tres elementos de la urbanización smart", reverso: "Avances tecnológicos (TIC), innovación colectiva y globalización/retos globales." },
-    { id: 116, tema: 7, anverso: "Smart Planet", reverso: "Proyecto de IBM lanzado en 2008, precursor mundial de las smart cities." },
-    { id: 117, tema: 7, anverso: "Harrison et al. (2010)", reverso: "Definen la smart city como ciudad instrumentalizada, interconectada e inteligente." },
-    { id: 118, tema: 7, anverso: "Giffinger y Gudrum (2010)", reverso: "Proponen 6 características de smart city: economía, gobernanza, medio ambiente, personas, movilidad y estilo de vida." },
-    { id: 119, tema: 7, anverso: "Dos elementos imprescindibles de smart city", reverso: "IoT/WSN para captar datos en tiempo real y procesamiento/análisis de grandes volúmenes de datos." },
-    { id: 120, tema: 7, anverso: "Rol de la Ciencia e Ingeniería de Datos", reverso: "Pieza clave para el éxito de las smart cities, ya que permite procesar y analizar los datos captados." },
-    { id: 121, tema: 7, anverso: "Australia 1996 smart cities", reverso: "Primeros intentos de creación de ciudades inteligentes en Australia." },
-    { id: 122, tema: 7, anverso: "Smart cities en EE.UU.", reverso: "Proyecto de smart cities impulsado por el gobierno de Barack Obama." },
-    { id: 123, tema: 7, anverso: "Agenda Digital UE 2015", reverso: "Incluye el desarrollo de smart cities como objetivo fundamental, con proyectos piloto y comunidades rurales inteligentes." },
-    { id: 124, tema: 7, anverso: "i-Japan 2015", reverso: "Estrategia japonesa para crear una sociedad digital dirigida por los ciudadanos." },
-    { id: 125, tema: 7, anverso: "China 200 pilotos smart cities", reverso: "En 2015 China lanzó 200 pilotos para mejorar la sostenibilidad de su población urbana." },
-    { id: 126, tema: 7, anverso: "Ciudad digital", reverso: "Primera fase: incorpora tecnología para adquirir datos sobre población, recursos, entorno y aspectos económicos/sociales." },
-    { id: 127, tema: 7, anverso: "Intelligent city", reverso: "Segunda fase: las TIC catalizan innovación colaborativa mediante espacios, herramientas interactivas y sistemas integrados." },
-    { id: 128, tema: 7, anverso: "Smart city (fase avanzada)", reverso: "Intelligent city centrada en la experiencia de usuario, auto-adaptación y servicios personalizados." },
-    { id: 129, tema: 7, anverso: "Dimensiones de una ciudad", reverso: "Gobernanza, movilidad, energía, medio ambiente, economía, personas, estilo de vida, seguridad y residuos." },
-    { id: 130, tema: 7, anverso: "Medialab Matadero", reverso: "Plataforma de creación, investigación y producción experimental impulsada por el Procomún en Madrid." },
-    { id: 131, tema: 7, anverso: "Ciencia ciudadana", reverso: "Investigación científica con participación del público, frecuentemente científicos amateur. Requiere datos abiertos." },
-    { id: 132, tema: 7, anverso: "Origen término 'ciencia ciudadana'", reverso: "Acuñado en 1989 por la revista MIT Technology Review." },
-    { id: 133, tema: 7, anverso: "Datos abiertos y ciencia ciudadana", reverso: "Los datos abiertos son esenciales para posibilitar proyectos de ciencia ciudadana." },
-    { id: 134, tema: 7, anverso: "Vigilancia masiva en smart cities", reverso: "Riesgo derivado de la proliferación de sensores distribuidos por la ciudad." },
-    { id: 135, tema: 7, anverso: "Ciberataques a infraestructuras críticas", reverso: "Riesgo de smart cities: ataques a sistemas de energía, agua o transporte." },
-    { id: 136, tema: 7, anverso: "Pérdida de anonimato", reverso: "Riesgo de smart cities: los ciudadanos pueden perder anonimato en espacios públicos." },
-    { id: 137, tema: 7, anverso: "EDINT", reverso: "Espacios de Datos para las Infraestructuras Urbanas Inteligentes. Proyecto español de ecosistema de centros de datos en municipios." },
-    { id: 138, tema: 7, anverso: "EDINT: presupuesto y entidades", reverso: "Presupuesto cercano a 13 millones de euros, 12 entidades locales españolas, FEMP, Red.es y colaboración con SEGITTUR." },
-    { id: 139, tema: 7, anverso: "CEOD", reverso: "Centro de Excelencia y Oficina del Dato. Espacio físico de gestión y compartición de datos municipales." },
-    { id: 140, tema: 7, anverso: "Espacio de datos", reverso: "Infraestructura para almacenar, compartir y reutilizar datos de forma segura e interoperable." },
-    { id: 141, tema: 7, anverso: "Knowledge gap", reverso: "Vacío de conocimiento generado por la marcha de personal clave experimentado en el dominio de negocio." },
-    { id: 142, tema: 7, anverso: "Referencia Kirwan y Fu (2020)", reverso: "'Smart Cities and Artificial Intelligence'. Elsevier. ISBN 978-0-12-817024-3." }
-];;
+    { id: 2, tema: 5, anverso: "Objetivo de la Ciencia de Datos", reverso: "Obtener conocimiento valioso y desarrollar productos y servicios basados en datos (Transformación Digital, Industria 4.0)." },
+    { id: 3, tema: 5, anverso: "ML en Ciencia de Datos", reverso: "El aprendizaje máquina es esencial, pero no el único componente. Se necesitan equipos multidisciplinares." },
+    { id: 4, tema: 5, anverso: "Caso Stitch Fix", reverso: "Startup de asesoramiento de ropa que combina algoritmos de recomendación con estilistas humanos (IA + IH)." },
+    { id: 5, tema: 5, anverso: "Eric Colson", reverso: "Chief Algorithms Officer de Stitch Fix; anteriormente VP Data Science & Engineering en Netflix y Manager BI en Yahoo." },
+    { id: 6, tema: 5, anverso: "Tres áreas de transformación digital", reverso: "El cliente, el negocio y la empresa (procesos, liderazgo, cultura)." },
+    { id: 7, tema: 5, anverso: "Estudio Territorio Creativo 2015: transformación digital", reverso: "69% de empresas españolas habían iniciado transformación digital; 65% identificaba big data como clave; 50% no se sentía preparado." },
+    { id: 8, tema: 5, anverso: "Sector más preparado para transformación digital", reverso: "Telecomunicaciones (convergencia de servicios y redes 5G)." },
+    { id: 9, tema: 5, anverso: "Sectores más atrasados en transformación digital", reverso: "Moda y Belleza, Servicios, Cultura/Ocio, Distribución y Retail." },
+    { id: 10, tema: 5, anverso: "9 factores palanca IBM", reverso: "Estudio de IBM con más de 900 empresas que identificó palancas de activación, dirección y amplificación para rentabilizar big data." },
+    { id: 11, tema: 5, anverso: "Palancas de activación", reverso: "Evidencias + conocimiento de negocio; métricas; plataformas hardware/software para Big Data." },
+    { id: 12, tema: 5, anverso: "Palancas de dirección", reverso: "Cultura del dato; data supply chain; estrategia y gobierno de datos; confianza y transparencia." },
+    { id: 13, tema: 5, anverso: "Data supply chain", reverso: "Flujo de valor de los datasets a lo largo de las diferentes fases de negocio." },
+    { id: 14, tema: 5, anverso: "Palancas de amplificación", reverso: "Visión común; gestión de inversiones; compartir conocimientos dentro y fuera de la empresa." },
+    { id: 15, tema: 5, anverso: "Data-driven organization", reverso: "Organización que usa datos para informar decisiones combinándolos con experiencia humana (IA + IH)." },
+    { id: 16, tema: 5, anverso: "William E. Deming", reverso: "Autor de la cita 'Without data, you're just another person with an opinion.'" },
+    { id: 17, tema: 5, anverso: "Ventajas de los datos digitales", reverso: "Reutilizables, no se degradan físicamente, valor estratégico." },
+    { id: 18, tema: 5, anverso: "Inconvenientes de los datos digitales", reverso: "Problemas de integridad, homogeneidad y vigencia; riesgo de corrupción o pérdida." },
+    { id: 19, tema: 5, anverso: "Modelo operativo centralizado", reverso: "Un único equipo de Ciencia de Datos actúa como consultoría interna. Coherencia metodológica pero riesgo de atomización." },
+    { id: 20, tema: 5, anverso: "Modelo operativo desplegado", reverso: "Equipo central + equipos avanzados en unidades de negocio que hacen de puente. Mejor para organizaciones medianas/grandes." },
+    { id: 21, tema: 5, anverso: "Modelo operativo difuso", reverso: "Unidades de Ciencia de Datos en cada negocio sin equipo central. Riesgo de repetición de esfuerzos." },
+    { id: 22, tema: 5, anverso: "Anti-HiPPOs", reverso: "Oposición a decisiones basadas únicamente en la opinión de la persona mejor pagada (Highest Paid Person's Opinion)." },
+    { id: 23, tema: 5, anverso: "Data literacy", reverso: "Alfabetización en datos; conocimiento sobre manejo e interpretación de datos." },
+    { id: 24, tema: 5, anverso: "Nuevos roles en cultura del dato", reverso: "CDO (Chief Data Officer), CAO (Chief Analytics/Algorithms Officer), CDS (Chief Data Scientist), CRS (Chief Research Scientist)." },
+    { id: 25, tema: 5, anverso: "Knowledge gap", reverso: "Vacío de conocimiento por la marcha de personal clave experimentado en el dominio de negocio." },
+    { id: 26, tema: 5, anverso: "Sesgo de inversión", reverso: "Destinar presupuesto de IA a proyectos visibles en lugar de equipos o procesos internos de alto ROI." },
+    { id: 27, tema: 5, anverso: "Data Science Maturity Model (DSMM)", reverso: "Collect → Describe → Discover → Predict → Advise. El más avanzado es Advise." },
+    { id: 28, tema: 5, anverso: "Data Mesh", reverso: "Dato y código como una misma unidad; propiedad descentralizada de dominios de datos; autoservicio y gobernanza federada." },
+    { id: 29, tema: 5, anverso: "Ciclo de vida de los datos", reverso: "Generación, recolección, almacenamiento, procesamiento, uso, compartición, archivado y destrucción segura." },
+    { id: 30, tema: 5, anverso: "Gobierno de datos", reverso: "Abarca calidad, seguridad, privacidad, metadatos, acceso, arquitectura y gestión de ciclo de vida." },
+    { id: 31, tema: 5, anverso: "GenIA: estudio MIT NANDA 2025", reverso: "95% de organizaciones obtienen cero retorno; solo 5% de proyectos piloto tienen buen rendimiento económico; inversión de 30-40 mil millones de dólares." },
+    { id: 32, tema: 5, anverso: "Brecha GenIA", reverso: "Diferencia entre compradores y creadores de soluciones GenIA. Incluye disrupción limitada, paradoja empresarial, sesgo de inversión y ventaja de implementación." },
+    { id: 33, tema: 5, anverso: "Disrupción limitada (Brecha GenIA)", reverso: "Solo contenidos digitales/telecomunicaciones y servicios profesionales han logrado mejoras de eficiencia con GenIA." },
+    { id: 34, tema: 5, anverso: "Paradoja empresarial (Brecha GenIA)", reverso: "Las grandes firmas lideran en proyectos piloto pero quedan rezagadas en escalabilidad." },
+    { id: 35, tema: 5, anverso: "Ventaja de implementación (Brecha GenIA)", reverso: "Proyectos con alianzas externas tienen el doble de tasa de éxito que los internos." },
+    { id: 36, tema: 5, anverso: "Impuesto de verificación", reverso: "Coste adicional por verificar forensemente las respuestas de GenIA. Acuñado por Tanmai Gopal (PromptQL)." },
+    { id: 37, tema: 5, anverso: "Alucinaciones en IA", reverso: "Respuestas incorrectas o inventadas generadas por modelos GenIA. Requieren supervisión humana en aplicaciones críticas." },
+    { id: 38, tema: 5, anverso: "P&L", reverso: "Profit and Loss: declaración de pérdidas y ganancias. El 95% de proyectos piloto GenIA no impactan en la P&L." },
+    { id: 39, tema: 5, anverso: "ROI", reverso: "Return on Investment: retorno de la inversión. Clave para evaluar sostenibilidad de proyectos GenIA." },
+    { id: 40, tema: 5, anverso: "Sam Altman y GPT-5 (septiembre 2025)", reverso: "CEO de OpenAI admitió problemas en el despliegue de GPT-5 en clientes." },
+    { id: 41, tema: 5, anverso: "Jensen Huang y escalado de IA", reverso: "CEO de NVIDIA advirtió que podríamos estar llegando a un límite en la capacidad de escalar el entrenamiento de modelos de IA." },
+    { id: 42, tema: 5, anverso: "NVIDIA: caídas y capitalización 2025", reverso: "Cayó ~10% tras informe MIT; caída de hasta 26% en abril 2025 por aranceles Trump; capitalización de ~4,567 billones de dólares en octubre 2025." },
+    { id: 43, tema: 5, anverso: "CRISP-DM como mitigación", reverso: "Metodología para evitar proyectos inviables: caso de negocio claro, calidad de datos, control de costes cloud y gestión de expectativas." },
+    { id: 44, tema: 6, anverso: "CRISP-DM", reverso: "Cross-Industry Standard Process for Data Mining. Estándar de facto para gestión de proyectos de Ciencia de Datos. 6 fases iterativas." },
+    { id: 45, tema: 6, anverso: "6 fases de CRISP-DM", reverso: "Comprensión del negocio, comprensión de datos, preparación, modelado, evaluación y despliegue." },
+    { id: 46, tema: 6, anverso: "Ciclo de vida actualizado (9 fases)", reverso: "Extensión de CRISP-DM donde la novena fase es operacionalizar y desplegar en producción." },
+    { id: 47, tema: 6, anverso: "KPI", reverso: "Key Performance Indicator. Indicador cuantificable del éxito de una organización." },
+    { id: 48, tema: 6, anverso: "P&L", reverso: "Profit and Loss: declaración de pérdidas y ganancias que refleja el resultado económico." },
+    { id: 49, tema: 6, anverso: "Fase 1 CRISP-DM: definición de objetivos", reverso: "Definir KPIs, entender incertidumbre y alinear con indicadores financieros como P&L." },
+    { id: 50, tema: 6, anverso: "Fase 2 CRISP-DM: obtención y preparación", reverso: "Obtener datos (offline/tiempo real), almacenar, limpiar, usar ontologías, computación paralela y cloud." },
+    { id: 51, tema: 6, anverso: "Diccionario de datos", reverso: "Documento con nombre, naturaleza, descripción, valores posibles y rango de cada variable." },
+    { id: 52, tema: 6, anverso: "EDA", reverso: "Exploratory Data Analysis: análisis exploratorio de distribuciones, valores faltantes y relaciones." },
+    { id: 53, tema: 6, anverso: "Cita de Thomson Nguyen", reverso: "'80% of my time was spent cleaning the data. Better data will always beat better models.'" },
+    { id: 54, tema: 6, anverso: "Fase 3 CRISP-DM: construcción de modelos", reverso: "Construir uno o varios modelos según costes, tiempo y recursos. Ejemplo: The Netflix Prize." },
+    { id: 55, tema: 6, anverso: "Modelo descriptivo", reverso: "Resúmenes de datos sin interpretación." },
+    { id: 56, tema: 6, anverso: "Modelo exploratorio", reverso: "Interpretación del modelo sin analizar si es aplicable a otros datos." },
+    { id: 57, tema: 6, anverso: "Modelo inferencial", reverso: "Comprueba si patrones se mantienen en otros conjuntos de datos sin hacer predicciones." },
+    { id: 58, tema: 6, anverso: "Modelo predictivo", reverso: "Predice nuevos valores sin explicar la influencia de los parámetros de entrada." },
+    { id: 59, tema: 6, anverso: "Modelo causal", reverso: "Comprueba cómo cambios en un parámetro afectan a la salida, en valores promedio." },
+    { id: 60, tema: 6, anverso: "Modelo mecanístico", reverso: "Explica exactamente cómo varía la salida según los parámetros de entrada." },
+    { id: 61, tema: 6, anverso: "Overfitting", reverso: "Modelo que se ajusta perfectamente a entrenamiento pero no generaliza a datos nuevos." },
+    { id: 62, tema: 6, anverso: "Underfitting", reverso: "Modelo demasiado simple que no captura los patrones de los datos de entrenamiento." },
+    { id: 63, tema: 6, anverso: "Validación cruzada", reverso: "Divide datos en subconjuntos de entrenamiento y validación para evaluar la generalización." },
+    { id: 64, tema: 6, anverso: "Regularización", reverso: "Penaliza la complejidad del modelo para evitar el sobreajuste." },
+    { id: 65, tema: 6, anverso: "Early stopping", reverso: "Detener el entrenamiento cuando el rendimiento en validación deja de mejorar." },
+    { id: 66, tema: 6, anverso: "Cita de George E.P. Box", reverso: "'All models are wrong, some models are useful' (todos los modelos son erróneos; algunos son útiles)." },
+    { id: 67, tema: 6, anverso: "Cita de Einstein sobre simplicidad", reverso: "'Everything should be made as simple as possible, but not simpler.'" },
+    { id: 68, tema: 6, anverso: "MLOps", reverso: "Machine Learning Operations: despliegue, monitorización, mantenimiento y actualización de modelos." },
+    { id: 69, tema: 6, anverso: "Perfil del científico de datos", reverso: "Polifacético: software, redes, matemáticas, estadística, visualización, comunicación, gestión y dominio." },
+    { id: 70, tema: 6, anverso: "Portfolio de un científico de datos", reverso: "Repositorios públicos y blog; opcionalmente libros, artículos o tutoriales." },
+    { id: 71, tema: 6, anverso: "David Robinson", reverso: "Científico de datos; creador de paquetes R broom y tidytext; coautor de Tidy Text Mining." },
+    { id: 72, tema: 6, anverso: "Hadley Wickham", reverso: "Creador del tidyverse y tidymodels; autor de R for Data Science." },
+    { id: 73, tema: 6, anverso: "Wes McKinney", reverso: "Creador de Pandas y Apache Arrow; autor de Python for Data Analysis." },
+    { id: 74, tema: 6, anverso: "Jenny Bryan", reverso: "Desarrolladora de usethis y APIs de Google Drive para R; autora de Stat 545 y Happy Git with R." },
+    { id: 75, tema: 6, anverso: "Susana Ferreras", reverso: "Científica de datos en Arsenal FC y delegada de la selección femenina española de baloncesto." },
+    { id: 76, tema: 6, anverso: "Hilary Parker", reverso: "Científica de datos; coanfitriona del podcast Not So Standard Deviations con Roger D. Peng." },
+    { id: 77, tema: 6, anverso: "Kaggle", reverso: "Plataforma para encontrar proyectos de ejemplo y competiciones de ciencia de datos." },
+    { id: 78, tema: 6, anverso: "Reproducibilidad", reverso: "Capacidad para recomputar resultados con los mismos datos y el mismo pipeline." },
+    { id: 79, tema: 6, anverso: "Replicabilidad", reverso: "Capacidad de realizar un experimento independiente con datos diferentes." },
+    { id: 80, tema: 6, anverso: "Crisis de reproducibilidad en oncología", reverso: "Amgen confirmó solo 6 de 53 artículos emblemáticos; Bayer validó solo el 25%." },
+    { id: 81, tema: 6, anverso: "Crisis de reproducibilidad en psicología", reverso: "73% de autores de artículos APA no respondió sobre sus datos en 6 meses." },
+    { id: 82, tema: 6, anverso: "Ioannidis (2005)", reverso: "'Why Most Published Research Findings Are False'. Artículo clave sobre crisis de reproducibilidad." },
+    { id: 83, tema: 6, anverso: "Control de versiones", reverso: "Registro de cambios en código y datos para favorecer la reproducibilidad (ej. Git)." },
+    { id: 84, tema: 6, anverso: "Programación literaria", reverso: "Documentar el código como una obra de literatura. Donald Knuth, 1992." },
+    { id: 85, tema: 6, anverso: "summarytools", reverso: "Paquete Python usado en la Actividad 2 para obtener resúmenes descriptivos en el EDA." },
+    { id: 86, tema: 6, anverso: "Leek & Peng (2015)", reverso: "Autores de 'What is the question?', documento de referencia para clasificación de tipos de análisis." },
+    { id: 87, tema: 8, anverso: "Espacio Único Digital de Datos", reverso: "Iniciativa de la UE para un mercado único de datos seguros. Impulso en 2020." },
+    { id: 88, tema: 8, anverso: "Estrategia Europea de Datos (2020)", reverso: "Hito más importante para el Mercado Único de Datos Europeo en 2020." },
+    { id: 89, tema: 8, anverso: "RGPD / GDPR", reverso: "Reglamento General de Protección de Datos. Aprobado 2016, aplicado 2018." },
+    { id: 90, tema: 8, anverso: "Dividendo digital", reverso: "Beneficios obtenidos por el uso masivo de datos." },
+    { id: 91, tema: 8, anverso: "Pacto Verde Europeo", reverso: "Iniciativa de la UE para alcanzar la neutralidad climática en 2050." },
+    { id: 92, tema: 8, anverso: "CISPE", reverso: "Código de Conducta para Proveedores de Servicios de Infraestructura en la Nube en la UE." },
+    { id: 93, tema: 8, anverso: "FIWARE", reverso: "Plataforma de código abierto para smart cities e IoT." },
+    { id: 94, tema: 8, anverso: "GAIA-X", reverso: "Iniciativa para un ecosistema de datos federado en Europa." },
+    { id: 95, tema: 8, anverso: "Reglamento de IA UE 2024/1689", reverso: "Clasifica riesgos de IA en mínimo, limitado, alto y prohibido." },
+    { id: 96, tema: 8, anverso: "Consumo energético TIC en UE", reverso: "5-9% del consumo eléctrico total y 2% de emisiones contaminantes." },
+    { id: 97, tema: 8, anverso: "CISPE", reverso: "Cloud Infrastructure Services Providers in Europe; código de conducta para proveedores de nube en la UE." },
+    { id: 98, tema: 8, anverso: "FIWARE", reverso: "Plataforma de código abierto para smart cities e IoT impulsada por la UE." },
+    { id: 99, tema: 8, anverso: "GAIA-X", reverso: "Iniciativa para un ecosistema de datos federado en Europa." },
+    { id: 100, tema: 8, anverso: "Libro Blanco sobre IA (2020)", reverso: "Documento de la Comisión Europea publicado en 2020 junto con la Estrategia Europea de Datos, sobre el marco de IA en la UE." },
+    { id: 101, tema: 8, anverso: "Reglamento sobre Gobernanza de Datos", reverso: "Reglamento de noviembre 2020 que establece un marco para la gobernanza intersectorial del acceso y uso de datos en la UE." },
+    { id: 102, tema: 8, anverso: "Inversión en infraestructuras datos UE", reverso: "Primera fase en 2022 con una inversión total prevista de aproximadamente 2.000 millones de euros." },
+    { id: 103, tema: 8, anverso: "G2B", reverso: "Intercambio de datos de la Administración Pública a empresas." },
+    { id: 104, tema: 8, anverso: "B2B", reverso: "Intercambio de datos entre empresas." },
+    { id: 105, tema: 8, anverso: "B2G", reverso: "Intercambio de datos de empresas a la Administración Pública." },
+    { id: 106, tema: 8, anverso: "G2G", reverso: "Intercambio de datos entre administraciones públicas." },
+    { id: 107, tema: 8, anverso: "Data Acquisition", reverso: "Fase de la cadena de valor del dato: adquisición de datos estructurados/no estructurados, eventos, sensores, streams, multimodalidad." },
+    { id: 108, tema: 8, anverso: "Data Analysis", reverso: "Fase de la cadena de valor del dato: stream mining, análisis semántico, ML, extracción de información, datos vinculados." },
+    { id: 109, tema: 8, anverso: "Data Curation", reverso: "Fase de la cadena de valor del dato: validación, anotación, interoperabilidad y garantía de calidad." },
+    { id: 110, tema: 8, anverso: "Data Storage", reverso: "Fase de la cadena de valor del dato: bases en memoria, NoSQL, cloud, escalabilidad, seguridad." },
+    { id: 111, tema: 8, anverso: "Data Usage", reverso: "Fase de la cadena de valor del dato: soporte a decisiones, predicciones, simulaciones, visualización, control." },
+    { id: 112, tema: 8, anverso: "GENIVI Alliance", reverso: "Alianza del sector automoción, ejemplo de coopetition, que ha evolucionado a COVESA." },
+    { id: 113, tema: 8, anverso: "COVESA", reverso: "The Connected Vehicle Systems Alliance. Plataforma de coopetition para sistemas del coche inteligente conectado a IoT." },
+    { id: 114, tema: 8, anverso: "Riesgo mínimo o nulo en IA", reverso: "Sistemas como juegos o filtros de spam. No están regulados en el Reglamento de IA UE 2024/1689." },
+    { id: 115, tema: 8, anverso: "Riesgo limitado en IA", reverso: "Chatbots o generadores de contenido. Obligaciones de transparencia: informar que se interactúa con IA." },
+    { id: 116, tema: 8, anverso: "Riesgo alto en IA", reverso: "Diagnósticos médicos, conducción autónoma, identificación biométrica. Estrictos requisitos de seguridad, transparencia y supervisión humana." },
+    { id: 117, tema: 8, anverso: "Riesgo prohibido en IA", reverso: "Vigilancia masiva sin consentimiento. Completamente prohibidos en el Reglamento de IA UE 2024/1689." },
+    { id: 118, tema: 8, anverso: "ADAC", reverso: "Organización automovilística alemana que detectó la recopilación masiva y poco transparente de datos personales en coches modernos." },
+    { id: 119, tema: 8, anverso: "Blanco móvil (Ciencia de Datos)", reverso: "Metáfora que describe a la Ciencia de Datos como un campo en constante cambio y evolución." },
+    { id: 120, tema: 8, anverso: "Computación cuántica", reverso: "Tendencia futura que puede revolucionar el procesamiento de datos, pero amenaza la ciberseguridad habitual." },
+    { id: 121, tema: 8, anverso: "XAI", reverso: "Aprendizaje máquina explicable. Busca entender por qué los algoritmos toman determinadas decisiones." },
+    { id: 122, tema: 8, anverso: "Sintetización de contenidos", reverso: "Tendencia futura ejemplificada por GPT-3 y sistemas de síntesis de voz natural. Riesgos en atención al cliente." },
+    { id: 123, tema: 8, anverso: "Perfil unicornio", reverso: "Oferta laboral que exige aglutinar muchos conocimientos diversos; en realidad debería cubrirse con varias personas." },
+    { id: 124, tema: 8, anverso: "Storytelling en Ciencia de Datos", reverso: "Habilidad crecientemente importante para comunicar resultados y valor de los proyectos de datos." },
+    { id: 125, tema: 8, anverso: "Cuadratura del círculo (mercado de datos)", reverso: "Reto de la UE: regular y proteger sin frenar la libertad de mercado y la innovación en el Espacio Único de Datos." },
+    { id: 126, tema: 7, anverso: "Industria 4.0", reverso: "Cuarta Revolución Industrial. Término acuñado por Klaus Schwab en 2016. Combina robótica, IA, IoT, drones, vehículos autónomos, genética y materiales avanzados." },
+    { id: 127, tema: 7, anverso: "Klaus Schwab", reverso: "Economista y empresario alemán, fundador del Foro Económico Mundial. Autor de 'The Fourth Industrial Revolution' (2016)." },
+    { id: 128, tema: 7, anverso: "The Fourth Industrial Revolution (2016)", reverso: "Libro de Klaus Schwab que define el impacto de las tecnologías emergentes en el desarrollo humano del siglo XXI." },
+    { id: 129, tema: 7, anverso: "Primera Revolución Industrial", reverso: "Siglo XVIII. Mecanización y máquina de vapor." },
+    { id: 130, tema: 7, anverso: "Segunda Revolución Industrial", reverso: "Propiciada por la electricidad y las telecomunicaciones." },
+    { id: 131, tema: 7, anverso: "Tercera Revolución Industrial", reverso: "Introducción de las tecnologías digitales en los procesos industriales." },
+    { id: 132, tema: 7, anverso: "Cuarta Revolución Industrial: tecnologías", reverso: "Robótica, materiales avanzados, genética, IoT, drones, ingeniería biomédica, vehículos autónomos, IA y aprendizaje automático." },
+    { id: 133, tema: 7, anverso: "Impacto real de Industria 4.0", reverso: "No solo la tecnología, sino los cambios en relaciones humanas, productivas, sociales, políticas y económicas a escala global." },
+    { id: 134, tema: 7, anverso: "GIS", reverso: "Sistema de Información Geográfica. Tecnología de localización e identificación en Industria 4.0." },
+    { id: 135, tema: 7, anverso: "RFID", reverso: "Radio Frequency Identification. Tecnología de identificación mediante radiofrecuencia." },
+    { id: 136, tema: 7, anverso: "Wearable devices", reverso: "Dispositivos vestibles que recogen datos del usuario o del entorno: relojes inteligentes, pulseras de actividad, gafas AR, ropa inteligente." },
+    { id: 137, tema: 7, anverso: "NFV", reverso: "Network Functions Virtualization. Computación elástica y bajo demanda mediante dispositivos virtuales." },
+    { id: 138, tema: 7, anverso: "Riesgos de cadenas de suministro", reverso: "Dependencia globalizada de componentes críticos. Cambios geopolíticos (guerras, tensiones) revelan vulnerabilidades." },
+    { id: 139, tema: 7, anverso: "Microchips como componente crítico", reverso: "La producción de semiconductores es esencial para la estabilidad económica y tecnológica de un país." },
+    { id: 140, tema: 7, anverso: "Inversión IBM en microchips (EE.UU.)", reverso: "20.000 millones de dólares en fabricación de microchips, anunciada en planta visitada por Joe Biden." },
+    { id: 141, tema: 7, anverso: "Objetivo europeo de fabricación de chips", reverso: "Conseguir el 20% del mercado de producción de chips para 2030." },
+    { id: 142, tema: 7, anverso: "Taiwán y semiconductores", reverso: "Principal fabricante de microchips avanzados. Su inestabilidad política puede poner en riesgo el abastecimiento mundial." },
+    { id: 143, tema: 7, anverso: "Estrategia IC 4.0", reverso: "Estrategia Nacional de Industria Conectada 4.0 en España. Busca incrementar valor añadido industrial y empleo cualificado." },
+    { id: 144, tema: 7, anverso: "Objetivos de IC 4.0", reverso: "Incrementar valor añadido y empleo cualificado; favorecer modelo industrial de futuro; desarrollar palancas competitivas diferenciales." },
+    { id: 145, tema: 7, anverso: "UNE 0060", reverso: "Describe los requisitos para que una empresa industrial sea considerada Industria Digital en España." },
+    { id: 146, tema: 7, anverso: "UNE 0061", reverso: "Criterios detallados de evaluación para la Industria Digital en España." },
+    { id: 147, tema: 7, anverso: "HADA", reverso: "Herramienta de Autodiagnóstico Digital Avanzada, implantada por la Secretaría General de Industria." },
+    { id: 148, tema: 7, anverso: "IoT", reverso: "Internet of Things. Objetos físicos con sensores, software y capacidad de conexión para intercambiar datos." },
+    { id: 149, tema: 7, anverso: "Tres capacidades básicas del IoT", reverso: "Sensores para adquirir datos, software/procesamiento y tecnologías de comunicación en red." },
+    { id: 150, tema: 7, anverso: "Computación ubícua", reverso: "Paradigma en el que la computación está presente de forma integrada en el entorno cotidiano. Base del IoT." },
+    { id: 151, tema: 7, anverso: "Características 'Any' del IoT", reverso: "Anywhere/anyplace, anytime/anycontext, anyone/anybody, any service/any business, any path/any network." },
+    { id: 152, tema: 7, anverso: "WSN", reverso: "Wireless Sensor Network. Red de dispositivos con sensores que recogen y transmiten información." },
+    { id: 153, tema: 7, anverso: "Componentes de una WSN", reverso: "Sensor (adquiere datos), sumidero/estación base (recopila y reenvía) y usuarios (procesan la información)." },
+    { id: 154, tema: 7, anverso: "Sensor (WSN)", reverso: "Componente que recoge información sobre el entorno en tiempo real." },
+    { id: 155, tema: 7, anverso: "Sumidero o estación base (WSN)", reverso: "Nodo que recopila información de los sensores para reenviarla a Internet u otra red." },
+    { id: 156, tema: 7, anverso: "Tipos de redes de sensores", reverso: "Multimedia, subacuáticas, bajo tierra, de cuerpo y sensor-actor." },
+    { id: 157, tema: 7, anverso: "Redes sensor-actor", reverso: "WSN que no solo sensan el entorno sino que también actúan sobre él." },
+    { id: 158, tema: 7, anverso: "Topología en estrella", reverso: "Todos los sensores se comunican con un nodo central. Fácil de gestionar pero vulnerable si falla el central." },
+    { id: 159, tema: 7, anverso: "Topología peer-to-peer", reverso: "Los sensores se comunican entre sí. Más compleja pero más eficiente y resiliente." },
+    { id: 160, tema: 7, anverso: "Zigbee", reverso: "Protocolo de comunicación para redes de sensores personales y domótica. Bajo consumo y bajo coste." },
+    { id: 161, tema: 7, anverso: "Raspberry Pi", reverso: "Mini-computador de bajo coste ampliamente usado en proyectos de IoT, educación y prototipado." },
+    { id: 162, tema: 7, anverso: "Arduino", reverso: "Plataforma de hardware libre con microcontroladores para leer sensores y controlar actuadores." },
+    { id: 163, tema: 7, anverso: "Aplicación WSN: incendios forestales", reverso: "Redes de sensores monitorizan temperatura, humedad y humo para detectar incendios." },
+    { id: 164, tema: 7, anverso: "Smart city", reverso: "Ciudad que usa tecnología y datos para mejorar calidad de vida, optimizar recursos y reducir impacto ambiental." },
+    { id: 165, tema: 7, anverso: "Origen del término smart city", reverso: "Apareció a comienzos de la década de 1990." },
+    { id: 166, tema: 7, anverso: "Tres elementos de la urbanización smart", reverso: "Avances tecnológicos (TIC), innovación colectiva y globalización/retos globales." },
+    { id: 167, tema: 7, anverso: "Smart Planet", reverso: "Proyecto de IBM lanzado en 2008, precursor mundial de las smart cities." },
+    { id: 168, tema: 7, anverso: "Harrison et al. (2010)", reverso: "Definen la smart city como ciudad instrumentalizada, interconectada e inteligente." },
+    { id: 169, tema: 7, anverso: "Giffinger y Gudrum (2010)", reverso: "Proponen 6 características de smart city: economía, gobernanza, medio ambiente, personas, movilidad y estilo de vida." },
+    { id: 170, tema: 7, anverso: "Dos elementos imprescindibles de smart city", reverso: "IoT/WSN para captar datos en tiempo real y procesamiento/análisis de grandes volúmenes de datos." },
+    { id: 171, tema: 7, anverso: "Rol de la Ciencia e Ingeniería de Datos", reverso: "Pieza clave para el éxito de las smart cities, ya que permite procesar y analizar los datos captados." },
+    { id: 172, tema: 7, anverso: "Australia 1996 smart cities", reverso: "Primeros intentos de creación de ciudades inteligentes en Australia." },
+    { id: 173, tema: 7, anverso: "Smart cities en EE.UU.", reverso: "Proyecto de smart cities impulsado por el gobierno de Barack Obama." },
+    { id: 174, tema: 7, anverso: "Agenda Digital UE 2015", reverso: "Incluye el desarrollo de smart cities como objetivo fundamental, con proyectos piloto y comunidades rurales inteligentes." },
+    { id: 175, tema: 7, anverso: "i-Japan 2015", reverso: "Estrategia japonesa para crear una sociedad digital dirigida por los ciudadanos." },
+    { id: 176, tema: 7, anverso: "China 200 pilotos smart cities", reverso: "En 2015 China lanzó 200 pilotos para mejorar la sostenibilidad de su población urbana." },
+    { id: 177, tema: 7, anverso: "Ciudad digital", reverso: "Primera fase: incorpora tecnología para adquirir datos sobre población, recursos, entorno y aspectos económicos/sociales." },
+    { id: 178, tema: 7, anverso: "Intelligent city", reverso: "Segunda fase: las TIC catalizan innovación colaborativa mediante espacios, herramientas interactivas y sistemas integrados." },
+    { id: 179, tema: 7, anverso: "Smart city (fase avanzada)", reverso: "Intelligent city centrada en la experiencia de usuario, auto-adaptación y servicios personalizados." },
+    { id: 180, tema: 7, anverso: "Dimensiones de una ciudad", reverso: "Gobernanza, movilidad, energía, medio ambiente, economía, personas, estilo de vida, seguridad y residuos." },
+    { id: 181, tema: 7, anverso: "Medialab Matadero", reverso: "Plataforma de creación, investigación y producción experimental impulsada por el Procomún en Madrid." },
+    { id: 182, tema: 7, anverso: "Ciencia ciudadana", reverso: "Investigación científica con participación del público, frecuentemente científicos amateur. Requiere datos abiertos." },
+    { id: 183, tema: 7, anverso: "Origen término 'ciencia ciudadana'", reverso: "Acuñado en 1989 por la revista MIT Technology Review." },
+    { id: 184, tema: 7, anverso: "Datos abiertos y ciencia ciudadana", reverso: "Los datos abiertos son esenciales para posibilitar proyectos de ciencia ciudadana." },
+    { id: 185, tema: 7, anverso: "Vigilancia masiva en smart cities", reverso: "Riesgo derivado de la proliferación de sensores distribuidos por la ciudad." },
+    { id: 186, tema: 7, anverso: "Ciberataques a infraestructuras críticas", reverso: "Riesgo de smart cities: ataques a sistemas de energía, agua o transporte." },
+    { id: 187, tema: 7, anverso: "Pérdida de anonimato", reverso: "Riesgo de smart cities: los ciudadanos pueden perder anonimato en espacios públicos." },
+    { id: 188, tema: 7, anverso: "EDINT", reverso: "Espacios de Datos para las Infraestructuras Urbanas Inteligentes. Proyecto español de ecosistema de centros de datos en municipios." },
+    { id: 189, tema: 7, anverso: "EDINT: presupuesto y entidades", reverso: "Presupuesto cercano a 13 millones de euros, 12 entidades locales españolas, FEMP, Red.es y colaboración con SEGITTUR." },
+    { id: 190, tema: 7, anverso: "CEOD", reverso: "Centro de Excelencia y Oficina del Dato. Espacio físico de gestión y compartición de datos municipales." },
+    { id: 191, tema: 7, anverso: "Espacio de datos", reverso: "Infraestructura para almacenar, compartir y reutilizar datos de forma segura e interoperable." },
+    { id: 192, tema: 7, anverso: "Knowledge gap", reverso: "Vacío de conocimiento generado por la marcha de personal clave experimentado en el dominio de negocio." },
+    { id: 193, tema: 7, anverso: "Referencia Kirwan y Fu (2020)", reverso: "'Smart Cities and Artificial Intelligence'. Elsevier. ISBN 978-0-12-817024-3." }
+];;;
